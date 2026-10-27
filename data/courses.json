@@ -1,0 +1,48 @@
+{
+  "courses": [
+    {
+      "id": "advanced-vibration-analysis",
+      "title": "Advanced Vibration Analysis Training",
+      "type": "classroom",
+      "summary": "Five-day hands-on vibration analysis training on real rotor kits. Learn the concepts, see the faults, and practise diagnosis and balancing on the equipment.",
+      "duration": "5 days",
+      "format": "Classroom, hands-on",
+      "topics": [
+        "Fundamentals and DAQ configuration",
+        "Signal processing and data collection",
+        "Balancing of rigid and flexible rotors",
+        "Oil whirl, rubs, gearbox and bearing faults",
+        "Natural frequency with an impact hammer"
+      ],
+      "equipment": [
+        "Rotor kit RK4",
+        "DAQ ADRE 208",
+        "TWave T8",
+        "Valenian PT400 Mini"
+      ],
+      "prerequisites": "Confirm prerequisites with the instructor before you register.",
+      "instructor": "Mr. Srinivasa Raghavan Balaji",
+      "image": "assets/images/course-advanced.jpg",
+      "status": "upcoming"
+    },
+    {
+      "id": "vibration-analysis-online",
+      "title": "Vibration Analysis: Online Course",
+      "type": "online",
+      "summary": "A live two-day online course for working engineers covering fundamentals, plot interpretation, resonance and reporting.",
+      "duration": "2 days",
+      "format": "Online live sessions",
+      "topics": [
+        "Vibration fundamentals and data acquisition",
+        "Fault diagnostics and plot interpretation",
+        "Resonance, critical speed and ODS",
+        "Standards, acceptance criteria and reporting"
+      ],
+      "equipment": [],
+      "prerequisites": "A working knowledge of rotating equipment is helpful. Confirm details when you enquire.",
+      "instructor": "Mr. Srinivasa Raghavan Balaji",
+      "image": "assets/images/course-online.jpg",
+      "status": "open"
+    }
+  ]
+}

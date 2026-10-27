@@ -1,0 +1,8 @@
+{
+  "intro": "Course previews and demonstrations will appear here.",
+  "items": [
+    { "id": "v1", "title": "Course preview 1", "src": "", "poster": "", "embed": "" },
+    { "id": "v2", "title": "Course preview 2", "src": "", "poster": "", "embed": "" },
+    { "id": "v3", "title": "Course preview 3", "src": "", "poster": "", "embed": "" }
+  ]
+}

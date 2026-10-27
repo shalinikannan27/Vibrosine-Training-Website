@@ -1,0 +1,16 @@
+/* Design tokens — colours, type, spacing. Edit here to restyle the site. */
+:root {
+  --navy: #0B1F3A;
+  --navy-2: #13315C;
+  --blue: #1F6FEB;
+  --orange: #F28C28;
+  --paper: #F5F8FC;
+  --white: #fff;
+  --ink: #14202E;
+  --muted: #5A6B7F;
+  --line: #DCE4EE;
+  --serif: "Fraunces", Georgia, serif;
+  --sans: "DM Sans", system-ui, sans-serif;
+  --r: 14px;
+  --wrap: 1120px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vibrosine Training and Consultancy Services | Vibration Analysis Training</title>
+<meta name="description" content="Hands-on and online vibration analysis training in India. Learn the concepts, see the faults, understand the vibration.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-root="" data-page="home">
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">VIBR<b>O</b>SINE</a>
+    <button id="menu-btn" aria-expanded="false" aria-controls="nav-list" aria-label="Menu">&#9776;</button>
+    <nav aria-label="Main">
+      <ul id="nav-list">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="courses/index.html">Courses</a></li>
+        <li><a href="schedule/index.html">Schedule</a></li>
+        <li><a href="gallery/index.html">Gallery</a></li>
+        <li><a href="videos/index.html">Videos</a></li>
+        <li><a href="resources/index.html">Resources</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a class="btn btn-primary nav-cta" href="index.html#contact">Enquire now</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="wrap">
+    <h1 data-bind="hero-title">Learn the concepts. See the faults. Understand the vibration.</h1>
+    <p data-bind="hero-subtitle">Hands-on vibration analysis training on real rotor kits, plus online courses for working engineers.</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="courses/index.html">Explore our courses</a>
+      <a class="btn btn-ghost" href="schedule/index.html">View training schedule</a>
+      <a class="btn btn-ghost" href="#contact">Contact us</a>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 2400 110" preserveAspectRatio="none" aria-hidden="true">
+    <path class="b" d="M0 55 Q150 -10 300 55 T600 55 T900 55 T1200 55 T1500 55 T1800 55 T2100 55 T2400 55"/>
+    <path class="a" d="M0 55 Q100 120 200 55 T400 55 T600 55 T800 55 T1000 55 T1200 55 T1400 55 T1600 55 T1800 55 T2000 55 T2200 55 T2400 55"/>
+  </svg>
+</section>
+
+<div class="facts">
+  <div class="wrap">
+    <ul data-bind="facts"></ul>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap split">
+    <div>
+      <h2>About Vibrosine</h2>
+      <p class="lead" data-bind="about-lead"></p>
+      <p data-bind="about-body"></p>
+    </div>
+    <div data-bind="about-media"></div>
+  </div>
+</section>
+
+<section id="courses" class="sched">
+  <div class="wrap">
+    <h2>Courses</h2>
+    <p class="lead">Pick a course to see the topics, format and next batch.</p>
+    <div class="chips" role="group" aria-label="Filter courses">
+      <button class="chip" data-filter="all" aria-pressed="true">All</button>
+      <button class="chip" data-filter="classroom" aria-pressed="false">Classroom</button>
+      <button class="chip" data-filter="online" aria-pressed="false">Online</button>
+    </div>
+    <div class="grid c2" data-bind="courses"></div>
+  </div>
+</section>
+
+<section class="dark" id="instructor">
+  <div class="wrap split">
+    <div data-bind="instructor-media"></div>
+    <div>
+      <h2>Your instructor</h2>
+      <h3 data-bind="instructor-name"></h3>
+      <span class="cred" data-bind="instructor-cred"></span>
+      <p class="lead" style="margin-top:1rem" data-bind="instructor-bio"></p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="sched">
+  <div class="wrap">
+    <h2>Questions</h2>
+    <div data-bind="faq"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap split">
+    <div>
+      <h2>Contact us</h2>
+      <p class="lead">Tell us which course you are interested in and we will get back to you.</p>
+      <ul class="contact-list" data-bind="contact-list"></ul>
+    </div>
+    <form name="enquiry" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="enquiry">
+      <label>Name <input name="name" required></label>
+      <label>Phone <input name="phone" type="tel" required></label>
+      <label>Email <input name="email" type="email"></label>
+      <label>Course
+        <select name="course">
+          <option>Advanced Vibration Analysis Training</option>
+          <option>Vibration Analysis: Online Course</option>
+          <option>Not sure yet</option>
+        </select>
+      </label>
+      <label>Message <textarea name="message" rows="3"></textarea></label>
+      <button class="btn btn-primary" type="submit">Send enquiry</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">&copy; 2026 Vibrosine Training and Consultancy Services. Helping you understand the sign of your sine.</div></footer>
+<div class="float"><a href="tel:+919841678380">Call</a><a href="https://wa.me/919841678380">WhatsApp</a></div>
+
+<script src="js/render.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

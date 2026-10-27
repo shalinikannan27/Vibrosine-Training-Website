@@ -1,0 +1,40 @@
+[build]
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[redirects]]
+  from = "/courses"
+  to = "/courses/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/schedule"
+  to = "/schedule/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/gallery"
+  to = "/gallery/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/videos"
+  to = "/videos/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/resources"
+  to = "/resources/index.html"
+  status = 200

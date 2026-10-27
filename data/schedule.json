@@ -1,0 +1,31 @@
+{
+  "upcoming": [
+    {
+      "id": "oct-2026-advanced",
+      "courseId": "advanced-vibration-analysis",
+      "title": "Advanced Vibration Analysis Training, October 2026",
+      "type": "classroom",
+      "dates": "October 2026",
+      "notes": "Five-day hands-on course. Exact dates to be confirmed."
+    }
+  ],
+  "ongoing": [],
+  "past": [
+    {
+      "id": "apr-2026-classroom",
+      "courseId": "advanced-vibration-analysis",
+      "title": "Vibration Analysis Training, four 5-day batches on the rotor kit.",
+      "type": "classroom",
+      "dates": "Apr 12 to May 3, 2026",
+      "notes": ""
+    },
+    {
+      "id": "jun-2026-online",
+      "courseId": "vibration-analysis-online",
+      "title": "Online course, three 2-day batches.",
+      "type": "online",
+      "dates": "Jun 13 to 28, 2026",
+      "notes": ""
+    }
+  ]
+}
