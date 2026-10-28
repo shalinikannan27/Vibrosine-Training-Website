@@ -3,10 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Training schedule | Vibrosine Training</title>
-<meta name="description" content="Upcoming, ongoing and past vibration analysis training batches.">
+<title>Sessions | Vibrosine Training</title>
+<meta name="description" content="Browse recorded past Vibrosine training sessions and enquire about future batch dates.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Training Sessions | Vibrosine">
+<meta property="og:description" content="View recorded past Vibrosine training sessions and enquire about future batch dates.">
+<meta property="og:image" content="https://vibrosine.com/assets/images/vibrosine-logo.jpeg">
+<link rel="canonical" href="https://vibrosine.com/schedule/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="../assets/images/vibrosine-logo.jpeg">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Fraunces:wght@600;700&amp;display=swap">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/tokens.css">
 <link rel="stylesheet" href="../css/base.css">
@@ -23,12 +30,13 @@
       <ul id="nav-list">
         <li><a href="../index.html#about">About</a></li>
         <li><a href="../courses/index.html">Courses</a></li>
-        <li><a href="index.html" aria-current="page">Schedule</a></li>
+        <li><a href="../services/index.html">Services</a></li>
+        <li><a href="index.html" aria-current="page">Sessions</a></li>
         <li><a href="../gallery/index.html">Gallery</a></li>
         <li><a href="../videos/index.html">Videos</a></li>
         <li><a href="../resources/index.html">Resources</a></li>
         <li><a href="../index.html#contact">Contact</a></li>
-        <li><a class="btn btn-primary nav-cta" href="../index.html#contact">Enquire now</a></li>
+        <li><a class="btn btn-primary nav-cta" href="https://wa.me/919841678380?text=Hello%20Vibrosine%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">Enquire now</a></li>
       </ul>
     </nav>
   </div>
@@ -37,31 +45,30 @@
 <main>
 <section class="hero page-hero">
   <div class="wrap">
-    <h1>Training schedule</h1>
-    <p>See what is coming up and what we have already run.</p>
+    <p class="eyebrow">Training sessions</p>
+    <h1>Sessions</h1>
+    <p>Past sessions are listed from the training records and supplied course posters.</p>
   </div>
-  <svg class="wave" viewBox="0 0 2400 110" preserveAspectRatio="none" aria-hidden="true">
-    <path class="b" d="M0 55 Q150 -10 300 55 T600 55 T900 55 T1200 55 T1500 55 T1800 55 T2100 55 T2400 55"/>
-    <path class="a" d="M0 55 Q100 120 200 55 T400 55 T600 55 T800 55 T1000 55 T1200 55 T1400 55 T1600 55 T1800 55 T2000 55 T2200 55 T2400 55"/>
-  </svg>
 </section>
 
-<section>
+<section class="schedule-history">
   <div class="wrap">
-    <div class="chips" role="tablist" aria-label="Schedule">
-      <button class="chip" role="tab" data-panel="upcoming" aria-selected="true">Upcoming</button>
-      <button class="chip" role="tab" data-panel="ongoing" aria-selected="false">Ongoing</button>
-      <button class="chip" role="tab" data-panel="past" aria-selected="false">Past</button>
+    <div class="schedule-tabs" role="tablist" aria-label="Training sessions">
+      <button id="upcoming-tab" type="button" role="tab" aria-selected="true" aria-controls="upcoming-panel" data-schedule-tab="upcoming">Upcoming</button>
+      <button id="past-tab" type="button" role="tab" aria-selected="false" aria-controls="past-panel" data-schedule-tab="past" tabindex="-1">Past</button>
     </div>
-    <div id="upcoming" class="panel"></div>
-    <div id="ongoing" class="panel" hidden></div>
-    <div id="past" class="panel" hidden></div>
+    <section id="upcoming-panel" role="tabpanel" aria-labelledby="upcoming-tab">
+      <div id="upcoming" aria-label="Upcoming training sessions"></div>
+    </section>
+    <section id="past-panel" role="tabpanel" aria-labelledby="past-tab" hidden>
+      <div id="past" aria-label="Past training sessions"></div>
+    </section>
   </div>
 </section>
 </main>
 
 <footer><div class="wrap">&copy; 2026 Vibrosine Training and Consultancy Services. Helping you understand the sign of your sine.</div></footer>
-<div class="float"><a href="tel:+919841678380">Call</a><a href="https://wa.me/919841678380">WhatsApp</a></div>
+<div class="float"><a href="tel:+919841678380">Call</a><a href="https://wa.me/919841678380?text=Hello%20Vibrosine%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">WhatsApp</a></div>
 
 <script src="../js/render.js"></script>
 <script src="../js/main.js"></script>

@@ -1,8 +1,19 @@
 {
-  "intro": "Course previews and demonstrations will appear here.",
+  "intro": "Equipment demonstrations from Vibrosine training sessions.",
   "items": [
-    { "id": "v1", "title": "Course preview 1", "src": "", "poster": "", "embed": "" },
-    { "id": "v2", "title": "Course preview 2", "src": "", "poster": "", "embed": "" },
-    { "id": "v3", "title": "Course preview 3", "src": "", "poster": "", "embed": "" }
+    {
+      "id": "rotor-gearbox-kit-running",
+      "title": "Rotor and Gearbox Kit Running: Vibration Measurement Demonstration",
+      "description": "A running rotor training rig is shown alongside a handheld vibration meter and data acquisition equipment.",
+      "src": "assets/videos/rotor-gearbox-kit-running-720p.mp4",
+      "poster": "assets/videos/rotor-gearbox-kit-running-poster.jpg"
+    },
+    {
+      "id": "balancing-rigid-flexible-rotors",
+      "title": "Balancing of Rigid and Flexible Rotors: Demonstration",
+      "description": "A rotor balancing rig and its measurement system are shown during a hands-on demonstration.",
+      "src": "assets/videos/balancing-rigid-flexible-rotors-720p.mp4",
+      "poster": "assets/videos/balancing-rigid-flexible-rotors-poster.jpg"
+    }
   ]
 }

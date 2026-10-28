@@ -1,0 +1,122 @@
+{
+  "gallery": [
+    "experimental-modal-analysis",
+    "intermediate-machinery-vibration-analysis-level-iii",
+    "introductory-machinery-vibration",
+    "machinery-vibration-fundamentals-level-ii",
+    "online-offline-vibration-measurement-systems",
+    "digital-signal-processing-fundamentals",
+    "bearing-fault-samples",
+    "rotor-balancing-rig",
+    "rotor-kit-long",
+    "acrylic-kit-hammer",
+    "daq-case",
+    "rotor-housing"
+  ],
+  "homeGallery": [
+    "rotor-kit-long",
+    "acrylic-kit-hammer",
+    "daq-case",
+    "bearing-fault-samples"
+  ],
+  "items": [
+    {
+      "id": "experimental-modal-analysis",
+      "src": "assets/images/experimental-modal-analysis.webp",
+      "alt": "Test beam with sensors beside a laptop displaying modal-analysis plots",
+      "caption": "Experimental modal analysis"
+    },
+    {
+      "id": "intermediate-machinery-vibration-analysis-level-iii",
+      "src": "assets/images/intermediate-machinery-vibration-analysis-level-iii.webp",
+      "alt": "Rotor balancing training rig with multiple discs mounted along a shaft",
+      "caption": "Intermediate machinery vibration analysis"
+    },
+    {
+      "id": "introductory-machinery-vibration",
+      "src": "assets/images/introductory-machinery-vibration.webp",
+      "alt": "Blue motor and rotor training rig with a laptop displaying vibration data",
+      "caption": "Introductory machinery vibration"
+    },
+    {
+      "id": "machinery-vibration-fundamentals-level-ii",
+      "src": "assets/images/machinery-vibration-fundamentals-level-ii.webp",
+      "alt": "Motor and rotor training rig with sensors and a vibration-analysis display",
+      "caption": "Machinery vibration fundamentals"
+    },
+    {
+      "id": "online-offline-vibration-measurement-systems",
+      "src": "assets/images/online-offline-vibration-measurement-systems.webp",
+      "alt": "Handheld vibration analyzer beside an instrumented electric motor",
+      "caption": "Online and offline vibration measurement systems"
+    },
+    {
+      "id": "digital-signal-processing-fundamentals",
+      "src": "assets/images/digital-signal-processing-fundamentals.webp",
+      "alt": "Laptop showing time waveform and spectrum plots beside data-acquisition equipment",
+      "caption": "Digital signal processing fundamentals"
+    },
+    {
+      "id": "bearing-fault-samples",
+      "src": "assets/images/five-bearing-fault-samples-arranged-side-by-side.webp",
+      "alt": "Five bearing fault samples arranged side by side",
+      "caption": "Bearing fault samples"
+    },
+    {
+      "id": "rotor-balancing-rig",
+      "src": "assets/images/rotor-balancing-training-rig-with-red-cylindrical-rotor-cover.webp",
+      "alt": "Rotor balancing training rig with a red cylindrical rotor cover",
+      "caption": "Rotor balancing training rig"
+    },
+    {
+      "id": "rotor-kit-long",
+      "src": "assets/images/long-rotor-kit-mounted-on-a-training-bench.webp",
+      "alt": "Long rotor kit mounted on a training bench",
+      "caption": "Long rotor kit"
+    },
+    {
+      "id": "acrylic-kit-hammer",
+      "src": "assets/images/transparent-rotor-training-kit-with-handheld-vibration-instrument.webp",
+      "alt": "Transparent rotor training kit with a handheld vibration instrument",
+      "caption": "Transparent rotor training kit"
+    },
+    {
+      "id": "daq-case",
+      "src": "assets/images/open-protective-case-holding-data-acquisition-equipment.webp",
+      "alt": "Open protective case holding data-acquisition equipment",
+      "caption": "Data-acquisition case"
+    },
+    {
+      "id": "rotor-housing",
+      "src": "assets/images/rotor-housing.webp",
+      "alt": "Close-up of a rotor housing",
+      "caption": "Rotor housing"
+    },
+    {
+      "id": "instructor-balaji",
+      "src": "assets/images/instructor-balaji.webp",
+      "alt": "Vibrosine trainer Srinivasa Raghavan Balaji",
+      "caption": "Srinivasa Raghavan Balaji"
+    },
+    {
+      "id": "red-cylinder-kit",
+      "src": "assets/images/red-cylinder-kit.webp",
+      "alt": "Rotor balancing training rig with a red cylindrical rotor cover",
+      "caption": "Rotor balancing training rig"
+    },
+    {
+      "id": "balancing-rotor-gold",
+      "src": "assets/images/balancing-rotor-gold.webp",
+      "srcset": "assets/images/balancing-rotor-gold-800.webp 800w, assets/images/balancing-rotor-gold.webp 1400w",
+      "alt": "Motor-driven rotor with gold balancing discs",
+      "caption": "Gold-disc balancing rotor"
+    },
+    {
+      "id": "motor-disc-meter",
+      "src": "assets/images/motor-disc-meter.webp",
+      "srcset": "assets/images/motor-disc-meter-800.webp 800w, assets/images/motor-disc-meter.webp 1400w",
+      "alt": "Electric motor, balancing disc, and handheld vibration meter",
+      "caption": "Motor, balancing disc, and meter"
+    }
+  ]
+}

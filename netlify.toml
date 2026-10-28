@@ -15,6 +15,11 @@
     Cache-Control = "public, max-age=86400"
 
 [[redirects]]
+  from = "/services"
+  to = "/services/index.html"
+  status = 200
+
+[[redirects]]
   from = "/courses"
   to = "/courses/index.html"
   status = 200
@@ -38,3 +43,8 @@
   from = "/resources"
   to = "/resources/index.html"
   status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

@@ -1,13 +1,3 @@
 {
-  "intro": "Real sessions, real equipment.",
-  "items": [
-    { "id": "g1", "src": "assets/images/gallery-1.jpg", "alt": "Training highlight 1" },
-    { "id": "g2", "src": "assets/images/gallery-2.jpg", "alt": "Training highlight 2" },
-    { "id": "g3", "src": "assets/images/gallery-3.jpg", "alt": "Training highlight 3" },
-    { "id": "g4", "src": "assets/images/gallery-4.jpg", "alt": "Training highlight 4" },
-    { "id": "g5", "src": "assets/images/gallery-5.jpg", "alt": "Training highlight 5" },
-    { "id": "g6", "src": "assets/images/gallery-6.jpg", "alt": "Training highlight 6" },
-    { "id": "g7", "src": "assets/images/gallery-7.jpg", "alt": "Training highlight 7" },
-    { "id": "g8", "src": "assets/images/gallery-8.jpg", "alt": "Training highlight 8" }
-  ]
+  "intro": "Course and training equipment photographs."
 }

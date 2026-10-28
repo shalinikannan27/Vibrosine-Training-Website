@@ -1,31 +1,81 @@
 {
   "name": "Vibrosine Training and Consultancy Services",
   "shortName": "VIBROSINE",
-  "tagline": "Helping you understand the sign of your sine.",
+  "tagline": "Helping You Understand the Sign of Your Sine",
   "year": 2026,
-  "logo": "assets/images/logo.jpg",
+  "logo": "assets/images/vibrosine-logo.jpeg",
   "hero": {
-    "title": "Learn the concepts. See the faults. Understand the vibration.",
-    "subtitle": "Hands-on vibration analysis training on real rotor kits, plus online courses for working engineers."
+    "title": "Understand the sign of your machine’s vibration.",
+    "subtitle": "Training and consultancy in vibration measurement, analysis and balancing."
   },
   "facts": [
-    "Hands-on rotor kit practice",
-    "Classroom and online batches",
-    "Taught by a Category IV analyst",
-    "Fault diagnosis and balancing"
+    "Training for technicians, supervisors and engineers",
+    "Workshops and demonstrations",
+    "Vibration analysis and condition monitoring",
+    "Dynamic and field balancing"
   ],
   "about": {
-    "lead": "Vibrosine Training and Consultancy Services helps engineers understand machine vibration through practical sessions, simple equipment and clear explanations.",
-    "body": "Every session connects the concept to what you actually see and measure on the equipment.",
-    "image": "assets/images/about.jpg",
-    "imageLabel": "Photo placeholder: training session or instructor"
+    "title": "Welcome to Vibrosine",
+    "image": "assets/images/long-rotor-kit-mounted-on-a-training-bench.webp",
+    "lead": "A doctor’s sign might be hard to read, but not the sign of vibration. We help you understand what your machine is telling you.",
+    "story": [
+      "Machine design and manufacturing, installation conditions and the way equipment operates can all make it challenging to identify the source of vibration. Lubricant properties also influence vibration behavior and rotating machinery performance.",
+      "Modern data acquisition systems, sensitive sensors, software and laboratory lubricant results are useful, but they still need to be interpreted with the right points in mind. Collecting useful data at the right time, place and operating condition helps lead to the most important part of the analysis: the root cause."
+    ]
+  },
+  "help": {
+    "title": "How can we help you?",
+    "items": [
+      "Visit your plant, collect vibration data, analyze your machinery, report the findings and recommend appropriate corrective tasks.",
+      "Train your technicians and engineers in vibration data collection and analysis techniques so your team can work independently.",
+      "Guide students undertaking project work in vibration measurement and analysis."
+    ]
+  },
+  "team": {
+    "title": "Our team",
+    "body": "Our engineers bring experience in oil and gas, manufacturing and process industries. Their work includes vibration analysis, modal testing, ODS (Operational Deflection Shape) analysis, dynamic balancing and field balancing. Training courses are developed for technicians, supervisors and engineers and can be tailored to specific requirements."
+  },
+  "marketProspects": {
+    "title": "Market prospects",
+    "body": "Processing plants need academically qualified and technically experienced people in condition monitoring, especially vibration measurement and analysis. As predictive maintenance becomes more widely understood, employers increasingly seek trained and internationally certified vibration analysts.",
+    "detail": "Certification can help technical staff demonstrate their knowledge and be considered for condition-monitoring roles. Experienced staff also benefit from continuous training."
   },
   "instructor": {
-    "name": "Mr. Srinivasa Raghavan Balaji",
-    "credential": "Certified Vibration Analyst, Category IV",
-    "bio": "Sessions focus on practical demonstration, so you leave able to collect data, read the plots and recommend corrective action.",
-    "image": "assets/images/instructor.jpg",
-    "imageLabel": "Photo placeholder: instructor"
+    "name": "Srinivasa Raghavan Balaji",
+    "image": "assets/images/instructor-balaji.webp",
+    "credential": "Category IV Certified Vibration Analyst · Certified Reliability Professional",
+    "bio": "The trainer has 27 years of experience in the oil and gas industry, specializing in rotating machinery diagnostics, rotor balancing, installation and commissioning of balancing machines, and online vibration monitoring systems.",
+    "trainingGroups": [
+      {
+        "heading": "Vibration Institute courses",
+        "courses": [
+          "Basic Machinery Vibrations",
+          "Machinery Vibration Analysis",
+          "Advanced Vibration Analysis",
+          "Advanced Vibration Control",
+          "Rotor Dynamics",
+          "Balancing"
+        ]
+      },
+      {
+        "heading": "Bently Nevada courses",
+        "courses": [
+          "System 1 Fundamentals",
+          "Bently Performance",
+          "ADRE (Advanced Diagnostics of Rotating Equipment)",
+          "Machinery Diagnostics"
+        ]
+      },
+      {
+        "heading": "CSI (Computational Systems Incorporated) courses",
+        "courses": [
+          "CSI 2130 Machinery Health Analyzer",
+          "Advanced Peak Technology",
+          "Database Optimization using AMS Suite",
+          "Ultrasonic-based Steam Trap Monitoring using UE UltraProbe"
+        ]
+      }
+    ]
   },
   "contact": {
     "phoneDisplay": "+91 98416 78380",
@@ -34,20 +84,6 @@
     "whatsapp": "https://wa.me/919841678380",
     "linkedin": "https://www.linkedin.com/in/vibrosine-training-and-consultancy-services-b23923156/",
     "linkedinLabel": "Vibrosine on LinkedIn",
-    "address": "Address and hours to be added"
-  },
-  "faq": [
-    {
-      "q": "Do I need prior experience?",
-      "a": "Placeholder: confirm prerequisites with the client."
-    },
-    {
-      "q": "Is the training classroom or online?",
-      "a": "Both. See the course cards for the format of each course."
-    },
-    {
-      "q": "How do I register?",
-      "a": "Send an enquiry below or call +91 98416 78380."
-    }
-  ]
+    "address": "6C, 104, Pristine Acres, Phase 1, Nookampalayam Main Road, Perumbakkam, Chennai - 600100"
+  }
 }

@@ -1,6 +1,6 @@
 # Vibrosine Training website
 
-Static site for Vibrosine Training and Consultancy Services. This folder is the site root. Pages are HTML; courses, schedule, gallery, videos, resources and contact details live in JSON so you can update the site without editing markup.
+Static site for Vibrosine Training and Consultancy Services. This folder is the site root. Pages are HTML; courses, services, schedule, gallery, videos, resources and contact details live in JSON so you can update the site without editing markup.
 
 Opening `index.html` as a file will not load the JSON. Serve the folder:
 
@@ -14,12 +14,13 @@ Then open http://localhost:8080
 
 | You want to update | Edit this file |
 | --- | --- |
-| Course titles, type (classroom/online), summary, duration, format, topics, equipment, prerequisites, instructor, image path, status | `data/courses.json` |
-| Upcoming, ongoing or past batches (dates and notes) | `data/schedule.json` |
+| Course titles, summaries, overviews and topics | `data/courses.json` |
+| Consultancy and annual maintenance contract summaries and descriptions | `data/services.json` |
+| Past sessions and their training dates | `data/schedule.json` |
 | Gallery photos and captions | `data/gallery.json` |
-| Video titles, file paths, posters or embed HTML | `data/videos.json` |
+| Video titles, YouTube/Vimeo IDs, and optional poster paths | `data/videos.json` |
 | Downloadable notes and PDFs | `data/resources.json` |
-| Company name, tagline, hero text, facts, about copy, instructor bio, FAQ, phone, email, WhatsApp, LinkedIn, address | `data/site.json` |
+| Company name, tagline, hero text, welcome story, help, team, market prospects, instructor bio and training, phone, email, WhatsApp, LinkedIn, address and business hours | `data/site.json` |
 
 There is no price field. Do not add prices to any JSON file.
 
@@ -29,43 +30,45 @@ Add an object to `courses` in `data/courses.json` with:
 
 - `id` — URL slug, used as `courses/course.html?id=...`
 - `title`
-- `type` — `classroom` or `online`
 - `summary`
-- `duration`
-- `format`
+- `overview`
 - `topics` — array of strings
-- `equipment` — array of strings (use `[]` if none)
-- `prerequisites`
-- `instructor`
-- `image` — path from the site root, for example `assets/images/course-name.jpg`
-- `status` — for example `upcoming`, `open`, `ongoing`
+- `receives` — optional array of explicitly provided participant materials and completion items
+- `image` — optional photo path from the site root; when omitted, the card displays a labelled image slot for the course
+- `duration` / `format` — include only when stated in supplied company materials
 
-Put the photo in `assets/images/`. Until the file exists, the page shows a dashed placeholder.
+Only publish course information supported by the supplied company materials.
 
-### Adding a schedule row
+Add service entries to `services` in `data/services.json` with an `id`, `title`, `summary` and `description`. Do not add prices or unsupported dates.
 
-Add an object under `upcoming`, `ongoing` or `past` in `data/schedule.json`:
+### Adding a past training session
 
-- `id`, `courseId` (must match a course `id`), `title`, `type`, `dates`, `notes`
+Add an object under `past` in `data/schedule.json`:
+
+- `title` — the course/session name as recorded in the source spreadsheet
+- `startDate` and `endDate` — use ISO dates (`YYYY-MM-DD`)
+
+Do not include attendee names or contact details in schedule data.
 
 ### Adding photos, videos and PDFs
 
-1. Drop files in `assets/images/`, `assets/videos/` or `assets/pdfs/`.
-2. Point at them from the matching JSON file (`src`, `poster`, `file`).
+1. Drop files in `assets/images/` or `assets/pdfs/`; keep video hosting external if using YouTube or Vimeo.
+2. Point at them from the matching JSON file (`src`, `poster`, `file`). Video players load only after a visitor clicks a preview.
 
 ## Folder map
 
 ```
 vibrosine/
-  index.html                 Home, about, featured courses, instructor, FAQ, contact form
+  index.html                 Home, about, services, training, instructor and WhatsApp enquiry form
   courses/index.html         Full course listing (cards from courses.json)
   courses/course.html        One reusable detail page (?id=)
-  schedule/index.html        Upcoming / ongoing / past
+  services/index.html        Service cards (from services.json)
+  schedule/index.html        Past training sessions
   gallery/index.html
   videos/index.html
   resources/index.html
   css/                       tokens.css, base.css, components.css, pages.css
-  js/main.js                 Menu, course filter, schedule tabs
+  js/main.js                 Menu and WhatsApp enquiry form
   js/render.js               Loads JSON and builds cards
   data/                      JSON content
   assets/images|videos|pdfs|icons
@@ -76,6 +79,29 @@ Colours and fonts are CSS variables in `css/tokens.css`.
 
 ## Netlify
 
-Set the Netlify publish directory to this folder. If the Git root is the parent of `vibrosine`, publish `vibrosine`. The enquiry form on the home page uses Netlify Forms (`name="enquiry"`).
+### Connect and deploy
 
-Drop photos in `assets/images/`, videos in `assets/videos/`, and PDFs in `assets/pdfs/`. The wordmark is at `assets/images/logo.jpg`.
+1. In Netlify, choose **Add new site → Import an existing project** and connect GitHub.
+2. Select `shalinikannan27/Vibrosine-Training-Website` and the branch to publish.
+3. Use the repository root as the publish directory (`.`). The included `netlify.toml` sets this already.
+4. Deploy the site and check that all static pages and JSON data load correctly.
+5. To use a custom domain later, open **Domain management → Add a domain**, enter the domain you own, then follow Netlify’s DNS instructions at your registrar and wait for HTTPS provisioning.
+
+The enquiry form opens WhatsApp with a prefilled message using the company contact number. Verify the form and direct WhatsApp links on the deployed site.
+
+Drop photos in `assets/images/`, videos in `assets/videos/`, and PDFs in `assets/pdfs/`. The supplied wordmark is at `assets/images/vibrosine-logo.jpeg`.
+
+### Real-phone QA checklist
+
+- Check the contact strip, sticky navigation, and menu drawer at narrow phone widths; verify close-on-link, Escape, and keyboard focus behavior.
+- Swipe the past-session strip and course cards horizontally.
+- Open each course and service enquiry link and verify the WhatsApp message is prefilled.
+- Open a gallery image and close the lightbox using its button, the backdrop, and Escape.
+- Confirm videos do not load an external player until the play button is pressed.
+- Submit a test enquiry and verify the entered details appear in the WhatsApp message before sending.
+- Verify the phone and WhatsApp links open the expected apps and that no content is clipped by the floating contact bar.
+- Run Lighthouse on mobile and check contrast, keyboard focus, image loading, and reduced-motion behavior.
+
+## Search and page metadata
+
+Page titles, descriptions, Open Graph metadata, `sitemap.xml`, and `robots.txt` are included. EducationalOrganization and Course structured data are generated from the site/course JSON on page load. Update the canonical host in those files if the production domain differs.

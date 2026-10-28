@@ -1,48 +1,278 @@
 {
   "courses": [
     {
-      "id": "advanced-vibration-analysis",
-      "title": "Advanced Vibration Analysis Training",
-      "type": "classroom",
-      "summary": "Five-day hands-on vibration analysis training on real rotor kits. Learn the concepts, see the faults, and practise diagnosis and balancing on the equipment.",
-      "duration": "5 days",
-      "format": "Classroom, hands-on",
+      "id": "introductory-machinery-vibration",
+      "title": "Introductory Course of Machinery Vibration (Category I prep)",
+      "image": "assets/images/introductory-machinery-vibration.webp",
+      "imageName": "introductory-machinery-vibration.webp",
+      "summary": "Basic machinery vibration monitoring and diagnostic activities; recommended as partial preparation for the Vibration Analyst Category I Certification Exam.",
+      "overview": "This course prepares candidates to perform basic machinery vibration monitoring and diagnostic activities. It is recommended for partial preparation for the Vibration Analyst Category I Certification Exam.",
       "topics": [
-        "Fundamentals and DAQ configuration",
-        "Signal processing and data collection",
-        "Balancing of rigid and flexible rotors",
-        "Oil whirl, rubs, gearbox and bearing faults",
-        "Natural frequency with an impact hammer"
+        "Vibration sources and effects; characteristics, measurement conventions, properties, and units",
+        "Vectors and their significance in vibration measurements; rotational speed; vibration measures and conversions",
+        "Choosing the right measurement for the application",
+        "Digital signal-processing basics; analog and digital signals",
+        "Sensor types, features, characteristics, power-supply requirements, mounting methods, and limitations",
+        "Time and frequency domains; FFT basics and limitations",
+        "Data-collection parameters: frequency span, samples, resolution, sampling frequency, Nyquist theorem, aliasing, windowing, analog-to-digital conversion, and averaging",
+        "Forcing and natural frequencies, resonance, and critical speeds",
+        "Fault-frequency identification and common faults: unbalance, misalignment, looseness, and electrical faults",
+        "Vibration severity charts, condition evaluation, fault evaluation, standards, and acceptance testing",
+        "Workshops and demonstrations covering measurements, data collection, spectrum analysis, fault analysis, and vibration severity"
       ],
-      "equipment": [
-        "Rotor kit RK4",
-        "DAQ ADRE 208",
-        "TWave T8",
-        "Valenian PT400 Mini"
-      ],
-      "prerequisites": "Confirm prerequisites with the instructor before you register.",
-      "instructor": "Mr. Srinivasa Raghavan Balaji",
-      "image": "assets/images/course-advanced.jpg",
-      "status": "upcoming"
+      "receives": [
+        "Vibrosine course materials",
+        "Workshops containing examples and workshop problems",
+        "Training course examination",
+        "Stationery",
+        "Certificate of course completion"
+      ]
     },
     {
-      "id": "vibration-analysis-online",
-      "title": "Vibration Analysis: Online Course",
-      "type": "online",
-      "summary": "A live two-day online course for working engineers covering fundamentals, plot interpretation, resonance and reporting.",
-      "duration": "2 days",
-      "format": "Online live sessions",
+      "id": "intermediate-machinery-vibration-analysis-level-iii",
+      "title": "Intermediate Course on Machinery Vibration Analysis Level III",
+      "image": "assets/images/intermediate-machinery-vibration-analysis-level-iii.webp",
+      "imageName": "intermediate-machinery-vibration-analysis-level-iii.webp",
+      "summary": "In-depth single-channel time waveform, FFT and phase analysis for evaluating industrial machinery, with partial preparation for the Vibration Analyst Category III Certification Exam.",
+      "overview": "This course provides more in-depth discussions of single-channel time waveform, FFT, and phase analysis techniques for the evaluation of industrial machinery. It includes acceptance testing, machine severity assessment, use of demodulation and HFE techniques, basic rotor dynamics, basic ODS, and single-plane balancing. This course is partial preparation for the Vibration Analyst Category III Certification Exam. Workshops and demonstrations scheduled throughout the training course illustrate theory and applications.",
       "topics": [
-        "Vibration fundamentals and data acquisition",
-        "Fault diagnostics and plot interpretation",
-        "Resonance, critical speed and ODS",
-        "Standards, acceptance criteria and reporting"
+        "Time and frequency analysis: time-domain and FFT displays and analysis, modulation, clipping, pulsation, beats, side bands, spectrum shape, synchronous and nonsynchronous signals, and case histories",
+        "Phase and orbit analysis: phase measurement and analysis, orbit evaluation, loop rules, and case histories",
+        "Machinery vibration analysis techniques, resonance and critical-speed testing: interference diagrams, analyzer setup for impact and transient tests, test procedures, Bode/polar plot evaluation, and case histories",
+        "Machine condition evaluation: criteria, levels, maintenance actions, standards, overall-band, spectral, orbital and time-waveform evaluation, and alarm setting",
+        "Basic vibration control: isolation, damping, resonance elimination, concepts, hardware, foundations, and pedestals",
+        "Field balancing techniques: single-plane balancing, trial-weight size and location, balance sensitivity, and phase lag",
+        "Balancing exercises: measure selection, frequency spans, and time, frequency, and orbital displays",
+        "Transducers: proximity probes, accelerometers, optical pickups, selection, location, and mounting",
+        "Data acquisition and basic data-collector setup: sampling, triggering, window selection, resolution, dynamic range, and averaging",
+        "Basic analysis techniques: orders and direct-frequency spectrum analysis, including side bands",
+        "Analysis of operating-speed faults: orders, mass unbalance, misalignment, looseness, distortion, rubs, resonance, bearing wear, and case histories",
+        "Gear and bearing analysis: measurement methods, frequencies, analysis techniques, and case histories",
+        "Motors, fans, and pumps: basics, frequencies, techniques, and analysis",
+        "Fault analysis and machine-condition evaluation: measures, procedures, severity charts, and alarm settings",
+        "Machine testing: test plans, impact testing, and acceptance testing",
+        "Periodic monitoring: screening, alarm setup, measurement frequency, trending, and reports",
+        "Fundamentals of single-plane balancing",
+        "Machine analysis, course review, a one-and-a-half-hour examination on course content, and examination review"
       ],
-      "equipment": [],
-      "prerequisites": "A working knowledge of rotating equipment is helpful. Confirm details when you enquire.",
-      "instructor": "Mr. Srinivasa Raghavan Balaji",
-      "image": "assets/images/course-online.jpg",
-      "status": "open"
+      "receives": [
+        "Vibrosine course materials",
+        "Workshops containing examples and workshop problems",
+        "Training course examination",
+        "Calculator, ruler, and stationery",
+        "Certificate of completion"
+      ]
+    },
+    {
+      "id": "dynamic-balancing-of-rotors",
+      "title": "Dynamic Balancing of Rotors",
+      "image": "assets/images/balancing-rotor-gold.webp",
+      "imageName": "balancing-rotor-gold.webp",
+      "imageGroups": [
+        { "heading": "Balancing equipment", "items": ["balancing-rotor-gold", "motor-disc-meter", "red-cylinder-kit"] }
+      ],
+      "videoId": "balancing-rigid-flexible-rotors",
+      "summary": "An introduction to the balancing process, balancing-machine design, instrumentation, tooling, unbalance measurement and correction, with demonstrations and hands-on exercises.",
+      "overview": "This course provides a basic understanding of the balancing process. Participants learn the design principles of different balancing machines, how to use instrumentation and different tooling applications, balancing theory, types of imbalance, methods of correction, and measurements of unbalance. Demonstrations and hands-on exercises provide an opportunity to practise the skills covered.",
+      "topics": [
+        "Different types of unbalance: static, couple, and dynamic",
+        "ISO tolerance and terminology",
+        "Design principles of hard- and soft-bearing balancing machines",
+        "Theory of unbalance measurement and correction",
+        "Principles of tool design and avoiding tooling errors",
+        "Unbalance versus centrifugal-force determination",
+        "Correlation of unbalance and displacement of centre of gravity",
+        "Causes of unbalance errors",
+        "Rigid and flexible rotors",
+        "Selecting proper unbalance tolerance and balancing speed",
+        "Plane separation",
+        "Introduction to flexible rotors",
+        "Balancing-machine testing",
+        "Introduction to field balancing"
+      ]
+    },
+    {
+      "id": "machinery-vibration-fundamentals-level-ii",
+      "title": "Machinery Vibration Fundamentals Level II",
+      "image": "assets/images/machinery-vibration-fundamentals-level-ii.webp",
+      "imageName": "machinery-vibration-fundamentals-level-ii.webp",
+      "summary": "Basic machinery vibration analysis using single-channel measurements, with partial preparation for the Vibration Analyst Category II Certification Exam.",
+      "overview": "This course prepares attendees to perform basic machinery vibration analysis on industrial machinery using single-channel measurements, with or without trigger signals, according to established procedures. It covers sensors, database and data-collector setup, data collection, signal processing, fault analysis, and the basics of single-plane balancing. It is partial preparation for the Vibration Analyst Category II Certification Exam. Workshops and demonstrations illustrate theory and applications.",
+      "topics": [
+        "Vibration sources and effects; characteristics, measurement conventions, properties, and units",
+        "Vectors, rotational speed, vibration measures and conversions, and selecting measures",
+        "Digital signal-processing basics; analog and digital signals; sensors and mounting",
+        "Time and frequency domains, FFT, data collection, triggering, sampling, aliasing, windowing, averaging, and dynamic range",
+        "Single-mass oscillating systems with and without damping",
+        "Fault-frequency identification and relation of operating speed to faults",
+        "Motors, pumps, and compressors; unbalance, misalignment, looseness, resonance, critical speed, distortion, and bearing wear",
+        "Beats and modulation; gearbox and bearing measurement and analysis",
+        "Impact testing, run-up/coast-down, severity assessment, alarm limits, condition evaluation, acceptance testing, and report generation",
+        "Transducers, proximity probes, accelerometers, optical pickups, selection, location, and mounting",
+        "Data-collector setup, direct-frequency spectrum analysis, operating-speed faults, and case histories",
+        "Gear and bearing analysis; motors, fans, pumps, and machine testing",
+        "Periodic monitoring, trending, reports, and fundamentals of single-plane balancing"
+      ],
+      "receives": [
+        "Vibrosine course materials",
+        "Workshops containing examples and workshop problems",
+        "Training course examination",
+        "Calculator, ruler, and stationery",
+        "Certificate of completion"
+      ]
+    },
+    {
+      "id": "vibration-analysis-and-rotor-balancing",
+      "title": "Vibration Analysis and Rotor Balancing Course",
+      "image": "assets/images/motor-disc-meter.webp",
+      "imageName": "motor-disc-meter.webp",
+      "imageGroups": [
+        { "heading": "Rotor balancing equipment", "items": ["motor-disc-meter", "balancing-rotor-gold", "red-cylinder-kit"] }
+      ],
+      "summary": "Vibration data collection, time waveform, spectral and phase analysis, fault-frequency interpretation, and the basics of single-plane rotor balancing.",
+      "overview": "This course provides a more in-depth understanding of basic vibration data collection, parameter setup, time waveform, spectral and phase analysis, and the basics of single-plane rotor balancing. Identification and interpretation of fault frequencies are examined. Discussions cover single-channel and multi-channel time waveform, FFT, and phase analysis techniques for evaluating industrial machinery, single-plane in-situ balancing procedures, the mass-spring-damper system, and the importance of critical speed in balancing.",
+      "topics": [
+        "Vibration data collection: measures, units, conversion, sensors, configuration, and analyzer setup for routine and off-route measurements",
+        "Time and frequency analysis: time-domain and FFT displays and analysis, modulation, clipping, pulsation, beats, side bands, spectrum shape, synchronous and nonsynchronous signals, and case histories",
+        "Phase and orbit analysis: phase measurement and analysis, orbit evaluation, loop rules, and case histories",
+        "Mass-spring-damper system: response of a single-mass oscillating system to various frequencies",
+        "Rigid and flexible rotors, critical speed, Bode plot, and slow-roll vector compensation",
+        "Fundamentals of rotor balancing",
+        "Different types of unbalance: static, couple, and dynamic",
+        "ISO tolerance and terminology",
+        "Design principles of hard- and soft-bearing balancing machines",
+        "Theory of unbalance measurement and correction",
+        "Basics of in-situ or field balancing",
+        "Pre-balancing checks",
+        "Single-plane balancing exercise using the influence coefficient method"
+      ]
+    },
+    {
+      "id": "experimental-modal-analysis",
+      "title": "Experimental Modal Analysis",
+      "image": "assets/images/experimental-modal-analysis.webp",
+      "imageName": "experimental-modal-analysis.webp",
+      "summary": "Modal testing, measurement methods, frequency response functions, system response, and modal parameter extraction.",
+      "overview": "This course covers modal testing applications, measurement methods, and analysis processes, including single- and multi-degree-of-freedom systems, frequency response functions, test planning, measurement systems, excitation methods, and modal parameter extraction.",
+      "topics": [
+        "Introduction to modal testing, applications, measurement methods, and analysis processes",
+        "Terminology and notations",
+        "Single-degree-of-freedom system theory",
+        "Presentation and properties of the frequency response function (FRF)",
+        "Data for single-degree-of-freedom systems",
+        "Undamped multi-degree-of-freedom systems",
+        "Multi-degree-of-freedom systems with proportional, structural, and viscous damping",
+        "Modal analysis of rotating structures and complex modes",
+        "Characteristics and presentation of multi-degree-of-freedom FRF data",
+        "Response-function measurement techniques and test planning",
+        "Basic measurement systems, structure preparation, and excitation",
+        "Transducers, amplifiers, analysers, and digital signal processing",
+        "Excitation signals and calibration",
+        "Mass cancellation and rotational FRF measurement",
+        "Measurements on non-linear structures and multi-point excitation",
+        "Modal parameter extraction methods"
+      ]
+    },
+    {
+      "id": "digital-signal-processing-fundamentals",
+      "title": "Digital Signal Processing Fundamentals",
+      "image": "assets/images/digital-signal-processing-fundamentals.webp",
+      "imageName": "digital-signal-processing-fundamentals.webp",
+      "summary": "Fundamentals of signals and systems, sampling, transforms, filters, signal averaging, and data formats.",
+      "overview": "Course topics include continuous-time signals and systems, discrete sequences and systems, sampling, Fourier transforms, filters, quadrature signals, the Hilbert transform, sampling-rate conversion, signal averaging, digital data formats, and the Laplace transform.",
+      "topics": [
+        "Introduction to signals and systems",
+        "Continuous-time signals and systems",
+        "Discrete sequences and systems",
+        "Periodic sampling",
+        "Discrete Fourier Transform (DFT)",
+        "Fast Fourier Transform (FFT)",
+        "Finite impulse response (FIR) filters",
+        "Infinite impulse response filters",
+        "Types of filters",
+        "Quadrature signals",
+        "Discrete Hilbert Transform",
+        "Sampling-rate conversion",
+        "Signal averaging",
+        "Digital data formats and effects",
+        "Laplace Transform"
+      ]
+    },
+    {
+      "id": "online-offline-vibration-measurement-systems",
+      "title": "Online and Offline Vibration Measurement Systems",
+      "image": "assets/images/online-offline-vibration-measurement-systems.webp",
+      "imageName": "online-offline-vibration-measurement-systems.webp",
+      "summary": "Online and offline measurement systems, instrumentation, vibration analysis plots, transient and steady-state data collection, and rotor-bearing systems.",
+      "overview": "Course topics cover the differences between online and offline vibration measurement, choosing a system, sensors and instrumentation, data collection and processing limitations, vibration plots, steady-state and transient data collection, and rotor-bearing system behavior.",
+      "topics": [
+        "Differences between online and offline vibration measurement",
+        "Choosing the right system",
+        "Sensor types and applications",
+        "Instrumentation for data collection and analysis",
+        "Limitations of data collection and processing",
+        "Vibration plots: time base, spectra, full spectra, orbit, shaft centreline, trend, Bode, Nyquist, and polar",
+        "Time-domain, frequency-domain, and phase analysis",
+        "Steady-state and transient data-collection techniques",
+        "Rotor-bearing systems",
+        "Resonance and critical speeds",
+        "Lubrication and its influence",
+        "Instability of rotor-bearing systems",
+        "Stiffness, damping, and their influence",
+        "Unbalance and balancing procedure",
+        "ISO guidelines",
+        "API guidelines"
+      ]
+    },
+    {
+      "id": "advanced-vibration-analysis-training",
+      "title": "Advanced Vibration Analysis Training",
+      "image": "assets/images/transparent-rotor-training-kit-with-handheld-vibration-instrument.webp",
+      "imageName": "transparent-rotor-training-kit-with-handheld-vibration-instrument.webp",
+      "imageGroups": [
+        { "heading": "Training equipment", "items": ["rotor-housing", "rotor-kit-long", "daq-case", "bearing-fault-samples", "rotor-balancing-rig"] }
+      ],
+      "summary": "Hands-on training covering vibration analysis, data acquisition, fault diagnostics, and rigid and flexible rotor balancing.",
+      "overview": "Hands-on advanced vibration analysis training using Rotor Kit RK4, PT400 Mini, and DAQ systems ADRE 208 and TWave T8.",
+      "topics": [
+        "Basics",
+        "DAQ configuration",
+        "Vibration data collection",
+        "Signal processing",
+        "Balancing rigid and flexible rotors",
+        "Oil whirl and rubs",
+        "Gearbox and bearing fault simulation and detection",
+        "Rolling element bearing fault analysis",
+        "Resonance and critical-speed testing",
+        "Different vibration plot types and interpretation",
+        "Corrective action and reporting",
+        "Operational Deflection Shape (ODS) analysis",
+        "Natural frequency identification using an instrumented impact hammer"
+      ],
+      "duration": "5 days",
+      "format": "Hands-on"
+    },
+    {
+      "id": "two-day-online-course",
+      "title": "2-day Online Course",
+      "image": "assets/images/open-protective-case-holding-data-acquisition-equipment.webp",
+      "imageName": "open-protective-case-holding-data-acquisition-equipment.webp",
+      "summary": "Online course covering vibration fundamentals, data acquisition, signal processing, diagnostics, rotor balancing and vibration plots.",
+      "overview": "The supplied online-course poster lists topics covering vibration fundamentals, data acquisition, signal processing, fault diagnostics, balancing, plots, resonance, operating deflection shapes, standards, and corrective-action reporting.",
+      "topics": [
+        "Vibration fundamentals",
+        "Data acquisition",
+        "Signal processing",
+        "Fault diagnostics",
+        "Dynamic balancing of rigid and flexible rotors",
+        "Different kinds of plots and interpretation",
+        "Resonance and critical-speed testing",
+        "Operational Deflection Shapes",
+        "Standards and acceptance criteria",
+        "Corrective-action recommendation and reporting"
+      ],
+      "duration": "2 days",
+      "format": "Online"
     }
   ]
 }

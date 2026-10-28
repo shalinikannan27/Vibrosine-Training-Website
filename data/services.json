@@ -1,0 +1,16 @@
+{
+  "services": [
+    {
+      "id": "consultancy-services",
+      "title": "Consultancy Services",
+      "summary": "Vibration expertise to help investigate equipment problems, find their source, and recommend end-to-end solutions.",
+      "description": "Tell us about the equipment trouble you are facing and share some basic details by email. A site visit can help us approach the problem at its source. We are happy to hear from both new and experienced professionals and will discuss the next steps with you."
+    },
+    {
+      "id": "amc",
+      "title": "AMC (Annual Maintenance Contracts)",
+      "summary": "Annual maintenance support for troublesome machines, with a monthly performance report and machine-level KPIs.",
+      "description": "Maintenance teams have many demands competing for their attention. Through an annual maintenance contract, we take on the maintenance of selected troublesome machines to help reduce the burden of repeated breakdowns. Each month, you receive a comprehensive machine performance report, including KPIs for equipment stops and line stops. The service aims to support MTBF improvement from the first month; contact us to discuss your requirements."
+    }
+  ]
+}

@@ -1,31 +1,44 @@
 {
-  "upcoming": [
-    {
-      "id": "oct-2026-advanced",
-      "courseId": "advanced-vibration-analysis",
-      "title": "Advanced Vibration Analysis Training, October 2026",
-      "type": "classroom",
-      "dates": "October 2026",
-      "notes": "Five-day hands-on course. Exact dates to be confirmed."
-    }
-  ],
-  "ongoing": [],
+  "upcoming": [],
   "past": [
-    {
-      "id": "apr-2026-classroom",
-      "courseId": "advanced-vibration-analysis",
-      "title": "Vibration Analysis Training, four 5-day batches on the rotor kit.",
-      "type": "classroom",
-      "dates": "Apr 12 to May 3, 2026",
-      "notes": ""
-    },
-    {
-      "id": "jun-2026-online",
-      "courseId": "vibration-analysis-online",
-      "title": "Online course, three 2-day batches.",
-      "type": "online",
-      "dates": "Jun 13 to 28, 2026",
-      "notes": ""
-    }
+    { "title": "CATEGORY II", "startDate": "2018-01-18", "endDate": "2018-01-22" },
+    { "title": "CATEGORY II", "startDate": "2018-01-24", "endDate": "2018-01-28" },
+    { "title": "CATEGORY III", "startDate": "2018-03-22", "endDate": "2018-03-24" },
+    { "title": "CATEGORY II", "startDate": "2018-05-09", "endDate": "2018-05-12" },
+    { "title": "CATEGORY II", "startDate": "2018-05-14", "endDate": "2018-05-18" },
+    { "title": "CATEGORY III", "startDate": "2018-05-14", "endDate": "2018-05-18" },
+    { "title": "CATEGORY II", "startDate": "2019-05-16", "endDate": "2019-05-19" },
+    { "title": "CATEGORY II", "startDate": "2019-07-16", "endDate": "2019-07-19" },
+    { "title": "CATEGORY II", "startDate": "2019-07-18", "endDate": "2019-07-21" },
+    { "title": "CATEGORY II", "startDate": "2019-11-14", "endDate": "2019-11-17" },
+    { "title": "BALANCING", "startDate": "2019-11-16", "endDate": "2019-11-17" },
+    { "title": "CATEGORY II", "startDate": "2020-01-07", "endDate": "2020-01-10" },
+    { "title": "CATEGORY III", "startDate": "2020-01-16", "endDate": "2020-01-21" },
+    { "title": "CATEGORY II", "startDate": "2021-03-28", "endDate": "2021-04-03" },
+    { "title": "CATEGORY III", "startDate": "2021-03-30", "endDate": "2021-04-03" },
+    { "title": "CATEGORY IV", "startDate": "2021-08-03", "endDate": "2021-08-07" },
+    { "title": "CATEGORY II", "startDate": "2022-06-28", "endDate": "2022-07-02" },
+    { "title": "CATEGORY IV", "startDate": "2023-07-16", "endDate": "2023-07-23" },
+    { "title": "PRACTICAL", "startDate": "2024-06-25", "endDate": "2024-06-28" },
+    { "title": "PRACTICAL", "startDate": "2025-01-27", "endDate": "2025-01-31" },
+    { "title": "ROTAR DYNAMICS", "startDate": "2025-05-14", "endDate": "2025-05-18" },
+    { "title": "PRACTICAL", "startDate": "2025-07-14", "endDate": "2025-07-19" },
+    { "title": "PRACTICAL & THEORY", "startDate": "2025-09-15", "endDate": "2025-09-19" },
+    { "title": "ONLINE CLASS", "startDate": "2026-04-26", "endDate": "2026-04-29" },
+    { "title": "Hands-on Advanced Vibration Analysis", "startDate": "2025-12-24", "endDate": "2025-12-28", "location": "Chennai", "mode": "Hands-on" },
+    { "title": "Advanced Vibration Analysis", "startDate": "2026-02-18", "endDate": "2026-02-22", "location": "Chennai", "mode": "Hands-on" },
+    { "title": "Advanced Vibration Analysis", "startDate": "2026-02-24", "endDate": "2026-02-28", "location": "Chennai", "mode": "Hands-on" },
+    { "title": "Advanced Vibration Analysis", "startDate": "2026-03-04", "endDate": "2026-03-08", "location": "Chennai", "mode": "Hands-on" },
+    { "title": "Advanced Vibration Analysis", "startDate": "2026-04-12", "endDate": "2026-04-16", "location": "Chennai", "mode": "Hands-on" },
+    { "title": "Advanced Vibration Analysis", "startDate": "2026-04-18", "endDate": "2026-04-22", "location": "Chennai", "mode": "Hands-on" },
+    { "title": "Advanced Vibration Analysis", "startDate": "2026-04-24", "endDate": "2026-04-28", "location": "Chennai", "mode": "Hands-on" },
+    { "title": "Advanced Vibration Analysis", "startDate": "2026-04-29", "endDate": "2026-05-03", "location": "Chennai", "mode": "Hands-on" },
+    { "title": "2-day Online Course", "startDate": "2026-06-13", "endDate": "2026-06-14", "mode": "Online" },
+    { "title": "2-day Online Course", "startDate": "2026-06-20", "endDate": "2026-06-21", "mode": "Online" },
+    { "title": "2-day Online Course", "startDate": "2026-06-27", "endDate": "2026-06-28", "mode": "Online" },
+    { "title": "From Theory to Touch: Master Vibration Analysis Live", "startDate": "2026-08-19", "endDate": "2026-08-23", "mode": "Mode to be confirmed" },
+    { "title": "Advanced Vibration Analysis (5 days)", "startDate": "2026-10-02", "endDate": "2026-10-06", "location": "Chennai", "mode": "Hands-on" },
+    { "title": "Advanced Vibration Analysis (5 days)", "startDate": "2026-10-09", "endDate": "2026-10-13", "location": "Chennai", "mode": "Hands-on" },
+    { "title": "Advanced Vibration Analysis (5 days)", "startDate": "2026-10-16", "endDate": "2026-10-20", "location": "Chennai", "mode": "Hands-on" }
   ]
 }
