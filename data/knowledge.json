@@ -1,0 +1,71 @@
+{
+  "intro": "Plain-English notes on vibration measurement, analysis and balancing.",
+  "articles": [
+    {
+      "id": "unbalance",
+      "title": "Unbalance",
+      "tag": "Rotor dynamics",
+      "summary": "When a rotor’s mass is not evenly distributed around its axis, rotation produces a repeating force. Vibration at running speed is one clue to investigate, not a diagnosis by itself.",
+      "body": [
+        "A rotor is unbalanced when its mass distribution is uneven relative to its rotation axis. As it turns, that uneven distribution produces a rotating force. The force generally appears at the rotational frequency, so running speed and vibration frequency are useful together.",
+        "Vibration amplitude and phase measurements can help assess an unbalance condition. Other faults can also produce vibration at running speed, so measurements should be considered alongside machine condition, operating state and other evidence.",
+        "Balancing changes the rotor’s mass distribution to reduce the residual unbalance. The correction method depends on the rotor and the measured response."
+      ]
+    },
+    {
+      "id": "misalignment",
+      "title": "Misalignment",
+      "tag": "Fault analysis",
+      "summary": "Misalignment describes a lack of alignment between connected rotating components. Vibration patterns can guide an investigation, but no single spectral feature confirms the fault.",
+      "body": [
+        "Coupled shafts can be offset, angularly misaligned, or affected by a combination of both. The resulting forces depend on the machine, coupling, supports and operating condition.",
+        "Vibration at running speed and its harmonics may be present, but these patterns are not unique to misalignment. Phase measurements, checks of the coupling and supports, and operating observations help put the vibration data in context.",
+        "Before correcting a suspected alignment issue, consider other possible causes and follow the equipment’s applicable alignment procedure."
+      ]
+    },
+    {
+      "id": "bearing-faults",
+      "title": "Bearing faults",
+      "tag": "Rolling-element bearings",
+      "summary": "A local defect in a rolling-element bearing can create repeated impacts as bearing parts move. Frequency and signal-processing techniques help assess those patterns.",
+      "body": [
+        "A defect on a raceway or rolling element can produce a series of impacts as the bearing rotates. The repetition rate depends on bearing geometry and shaft speed, so useful interpretation requires the correct bearing information and operating speed.",
+        "Impacts can excite high-frequency vibration. Techniques such as demodulation or envelope analysis can make repeating impact patterns easier to evaluate, when the measurement and setup are appropriate.",
+        "Trend measurements and physical inspection provide important context. A spectral peak alone should not be treated as proof of a bearing fault."
+      ]
+    },
+    {
+      "id": "resonance-critical-speed",
+      "title": "Resonance and critical speed",
+      "tag": "Machine response",
+      "summary": "A machine can respond strongly when an excitation approaches a natural frequency. Run-up, coast-down and phase information can help examine this behavior.",
+      "body": [
+        "Every machine structure has natural frequencies. When a periodic force acts near one of these frequencies, the resulting response can increase; this condition is called resonance.",
+        "A rotating machine may pass through a critical speed when its running speed coincides with a rotor-bearing system natural frequency. The response depends on damping, stiffness, supports and operating conditions.",
+        "Run-up or coast-down measurements, phase, Bode plots and other suitable vibration data can help identify and evaluate resonant behavior. Testing should be planned for the machine and its safe operating limits."
+      ]
+    },
+    {
+      "id": "operating-deflection-shape",
+      "title": "Operational Deflection Shape (ODS)",
+      "tag": "Vibration testing",
+      "summary": "An ODS shows how measured points on a machine move relative to one another under a selected operating condition. It describes operating motion, not necessarily a natural mode.",
+      "body": [
+        "An Operational Deflection Shape is a visual representation of a structure’s motion at a particular frequency or operating condition. Measurements from multiple points are combined to show their relative amplitude and phase.",
+        "An ODS can help communicate how a machine or structure is moving while it runs or responds to a test. Because operating motion includes the effects of the applied forces, it is not automatically the same as a mode shape.",
+        "The measurement plan, reference point and phase consistency matter when collecting data for an ODS."
+      ]
+    },
+    {
+      "id": "why-balancing-matters",
+      "title": "Why balancing matters",
+      "tag": "Rotor balancing",
+      "summary": "Balancing reduces residual mass unbalance in a rotor. It can reduce vibration caused by unbalance, but it does not correct unrelated machine faults.",
+      "body": [
+        "An unbalanced rotor produces a rotating force as it turns. That force can contribute to vibration transmitted through the rotor, bearings and supports.",
+        "Balancing measures the rotor response and adjusts mass distribution to reduce residual unbalance. Depending on the rotor, balancing may use one or more correction planes and a suitable balancing speed.",
+        "Correct balancing depends on sound measurements, appropriate tooling and the rotor’s requirements. If vibration remains, other causes such as misalignment, looseness or resonance may need investigation."
+      ]
+    }
+  ]
+}

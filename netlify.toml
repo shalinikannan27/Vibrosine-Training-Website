@@ -15,6 +15,18 @@
     Cache-Control = "public, max-age=86400"
 
 [[redirects]]
+  from = "/content-source/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/*.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
   from = "/services"
   to = "/services/index.html"
   status = 200

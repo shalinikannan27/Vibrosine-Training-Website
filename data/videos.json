@@ -2,18 +2,53 @@
   "intro": "Equipment demonstrations from Vibrosine training sessions.",
   "items": [
     {
-      "id": "rotor-gearbox-kit-running",
-      "title": "Rotor and Gearbox Kit Running: Vibration Measurement Demonstration",
-      "description": "A running rotor training rig is shown alongside a handheld vibration meter and data acquisition equipment.",
-      "src": "assets/videos/rotor-gearbox-kit-running-720p.mp4",
-      "poster": "assets/videos/rotor-gearbox-kit-running-poster.jpg"
+      "id": "vibration-analysis-display",
+      "originalFile": "WhatsApp Video 2026-10-29 at 13.59.30.mp4",
+      "title": "Vibration analysis software display",
+      "description": "A laptop screen displaying vibration measurement and analysis plots.",
+      "src": "assets/media/videos/vibration-analysis-display.mp4",
+      "poster": "assets/media/videos/vibration-analysis-display-poster.jpg",
+      "placements": [
+        "Videos page",
+        "Digital Signal Processing Fundamentals course page"
+      ]
     },
     {
-      "id": "balancing-rigid-flexible-rotors",
-      "title": "Balancing of Rigid and Flexible Rotors: Demonstration",
-      "description": "A rotor balancing rig and its measurement system are shown during a hands-on demonstration.",
-      "src": "assets/videos/balancing-rigid-flexible-rotors-720p.mp4",
-      "poster": "assets/videos/balancing-rigid-flexible-rotors-poster.jpg"
+      "id": "rotor-gearbox-training-kit",
+      "originalFile": "WhatsApp Video 2026-10-29 at 13.59.32.mp4",
+      "title": "Rotor and gearbox training kit",
+      "description": "A transparent rotor training kit with measurement equipment on a workbench.",
+      "src": "assets/media/videos/rotor-gearbox-training-kit.mp4",
+      "poster": "assets/media/videos/rotor-gearbox-training-kit-poster.jpg",
+      "placements": [
+        "Homepage: See it in action",
+        "Videos page",
+        "Advanced Vibration Analysis Training course page"
+      ]
+    },
+    {
+      "id": "rigid-flexible-rotor-balancing",
+      "originalFile": "WhatsApp Video 2026-10-29 at 13.59.36.mp4",
+      "title": "Rotor balancing rig demonstration",
+      "description": "A motor-driven rotor balancing rig with gold balancing discs.",
+      "src": "assets/media/videos/rigid-flexible-rotor-balancing.mp4",
+      "poster": "assets/media/videos/rigid-flexible-rotor-balancing-poster.jpg",
+      "placements": [
+        "Videos page",
+        "Homepage: See it in action",
+        "Dynamic Balancing of Rotors course page"
+      ]
+    },
+    {
+      "id": "data-acquisition-system",
+      "originalFile": "WhatsApp Video 2026-10-29 at 13.59.40.mp4",
+      "title": "Vibration data-acquisition system",
+      "description": "A portable data-acquisition unit and its connected measurement leads.",
+      "src": "assets/media/videos/data-acquisition-system.mp4",
+      "poster": "assets/media/videos/data-acquisition-system-poster.jpg",
+      "placements": [
+        "Videos page"
+      ]
     }
   ]
 }

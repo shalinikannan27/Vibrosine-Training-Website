@@ -1,6 +1,6 @@
 # Vibrosine Training website
 
-Static site for Vibrosine Training and Consultancy Services. This folder is the site root. Pages are HTML; courses, services, schedule, gallery, videos, resources and contact details live in JSON so you can update the site without editing markup.
+Static site for Vibrosine Training and Consultancy Services. This folder is the site root. Pages are HTML; courses, services, schedule, photos, videos, knowledge articles, FAQs and contact details live in JSON so you can update the site without editing markup.
 
 Opening `index.html` as a file will not load the JSON. Serve the folder:
 
@@ -17,12 +17,16 @@ Then open http://localhost:8080
 | Course titles, summaries, overviews and topics | `data/courses.json` |
 | Consultancy and annual maintenance contract summaries and descriptions | `data/services.json` |
 | Past sessions and their training dates | `data/schedule.json` |
-| Gallery photos and captions | `data/gallery.json` |
-| Video titles, YouTube/Vimeo IDs, and optional poster paths | `data/videos.json` |
-| Downloadable notes and PDFs | `data/resources.json` |
-| Company name, tagline, hero text, welcome story, help, team, market prospects, instructor bio and training, phone, email, WhatsApp, LinkedIn, address and business hours | `data/site.json` |
+| Photo inventory, captions and placements | `data/media.json` |
+| Video titles, source files, posters and placements | `data/videos.json` |
+| Knowledge articles | `data/knowledge.json` |
+| Frequently asked questions | `data/faq.json` |
+| Company name, tagline, hero text, welcome story, help, instructor bio and photo, contact address, phone, email and WhatsApp | `data/site.json` |
+| Brand logo and trainer portrait files | `assets/brand/` |
 
-There is no price field. Do not add prices to any JSON file.
+Keep published company information supported by supplied source material.
+
+The knowledge articles are general engineering explanations. Ask the client to review them before publication.
 
 ### Adding a course
 
@@ -34,12 +38,12 @@ Add an object to `courses` in `data/courses.json` with:
 - `overview`
 - `topics` — array of strings
 - `receives` — optional array of explicitly provided participant materials and completion items
-- `image` — optional photo path from the site root; when omitted, the card displays a labelled image slot for the course
+- `image` — photo path from the site root, using an item in `data/media.json`
 - `duration` / `format` — include only when stated in supplied company materials
 
 Only publish course information supported by the supplied company materials.
 
-Add service entries to `services` in `data/services.json` with an `id`, `title`, `summary` and `description`. Do not add prices or unsupported dates.
+Add service entries to `services` in `data/services.json` with an `id`, `title`, `summary` and `description`.
 
 ### Adding a past training session
 
@@ -50,10 +54,9 @@ Add an object under `past` in `data/schedule.json`:
 
 Do not include attendee names or contact details in schedule data.
 
-### Adding photos, videos and PDFs
+### Media files
 
-1. Drop files in `assets/images/` or `assets/pdfs/`; keep video hosting external if using YouTube or Vimeo.
-2. Point at them from the matching JSON file (`src`, `poster`, `file`). Video players load only after a visitor clicks a preview.
+Optimized photos, video files and posters are stored under `assets/media/` and indexed in `data/media.json` and `data/videos.json`. Original source materials belong in the ignored `content-source/` folder and are not published.
 
 ## Folder map
 
@@ -71,7 +74,7 @@ vibrosine/
   js/main.js                 Menu and WhatsApp enquiry form
   js/render.js               Loads JSON and builds cards
   data/                      JSON content
-  assets/images|videos|pdfs|icons
+  assets/media/images|videos
   netlify.toml
 ```
 
@@ -89,15 +92,15 @@ Colours and fonts are CSS variables in `css/tokens.css`.
 
 The enquiry form opens WhatsApp with a prefilled message using the company contact number. Verify the form and direct WhatsApp links on the deployed site.
 
-Drop photos in `assets/images/`, videos in `assets/videos/`, and PDFs in `assets/pdfs/`. The supplied wordmark is at `assets/images/vibrosine-logo.jpeg`.
+The site uses a text wordmark and locally optimized photo and video assets.
 
 ### Real-phone QA checklist
 
 - Check the contact strip, sticky navigation, and menu drawer at narrow phone widths; verify close-on-link, Escape, and keyboard focus behavior.
-- Swipe the past-session strip and course cards horizontally.
+- Check the course category filters and search on both the home and course pages.
 - Open each course and service enquiry link and verify the WhatsApp message is prefilled.
 - Open a gallery image and close the lightbox using its button, the backdrop, and Escape.
-- Confirm videos do not load an external player until the play button is pressed.
+- Confirm each local MP4 plays and displays its poster before playback.
 - Submit a test enquiry and verify the entered details appear in the WhatsApp message before sending.
 - Verify the phone and WhatsApp links open the expected apps and that no content is clipped by the floating contact bar.
 - Run Lighthouse on mobile and check contrast, keyboard focus, image loading, and reduced-motion behavior.

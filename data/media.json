@@ -1,122 +1,448 @@
 {
   "gallery": [
-    "experimental-modal-analysis",
-    "intermediate-machinery-vibration-analysis-level-iii",
-    "introductory-machinery-vibration",
-    "machinery-vibration-fundamentals-level-ii",
-    "online-offline-vibration-measurement-systems",
-    "digital-signal-processing-fundamentals",
-    "bearing-fault-samples",
-    "rotor-balancing-rig",
-    "rotor-kit-long",
-    "acrylic-kit-hammer",
-    "daq-case",
-    "rotor-housing"
+    "photo-01",
+    "photo-02",
+    "photo-03",
+    "photo-04",
+    "photo-05",
+    "photo-06",
+    "photo-07",
+    "photo-08",
+    "photo-09",
+    "photo-10",
+    "photo-11",
+    "photo-12",
+    "photo-13",
+    "photo-14",
+    "photo-15",
+    "photo-16",
+    "photo-17",
+    "photo-18",
+    "photo-19",
+    "photo-20",
+    "photo-21",
+    "photo-22",
+    "photo-23",
+    "photo-24",
+    "photo-25",
+    "photo-26",
+    "photo-27",
+    "photo-28",
+    "photo-29",
+    "photo-30",
+    "photo-31",
+    "photo-32",
+    "photo-33",
+    "photo-34",
+    "photo-35"
   ],
   "homeGallery": [
-    "rotor-kit-long",
-    "acrylic-kit-hammer",
-    "daq-case",
-    "bearing-fault-samples"
+    "photo-09",
+    "photo-19",
+    "photo-22",
+    "photo-32"
   ],
   "items": [
     {
-      "id": "experimental-modal-analysis",
-      "src": "assets/images/experimental-modal-analysis.webp",
-      "alt": "Test beam with sensors beside a laptop displaying modal-analysis plots",
-      "caption": "Experimental modal analysis"
+      "id": "photo-01",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.24.jpeg",
+      "src": "assets/media/images/photo-01-1400w.webp",
+      "srcset": "assets/media/images/photo-01-800w.webp 800w, assets/media/images/photo-01-1400w.webp 1400w",
+      "alt": "Handheld vibration meter showing a digital RPM display.",
+      "caption": "Digital RPM display on a handheld vibration meter",
+      "placements": [
+        "Gallery"
+      ]
     },
     {
-      "id": "intermediate-machinery-vibration-analysis-level-iii",
-      "src": "assets/images/intermediate-machinery-vibration-analysis-level-iii.webp",
-      "alt": "Rotor balancing training rig with multiple discs mounted along a shaft",
-      "caption": "Intermediate machinery vibration analysis"
+      "id": "photo-02",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.25.jpeg",
+      "src": "assets/media/images/photo-02-1400w.webp",
+      "srcset": "assets/media/images/photo-02-800w.webp 800w, assets/media/images/photo-02-1400w.webp 1400w",
+      "alt": "Transparent rotor training kit with connected measurement leads.",
+      "caption": "Transparent rotor training kit with measurement leads",
+      "placements": [
+        "Gallery",
+        "Training pillar",
+        "Course card and detail: experimental-modal-analysis"
+      ]
     },
     {
-      "id": "introductory-machinery-vibration",
-      "src": "assets/images/introductory-machinery-vibration.webp",
-      "alt": "Blue motor and rotor training rig with a laptop displaying vibration data",
-      "caption": "Introductory machinery vibration"
+      "id": "photo-03",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.26 (1).jpeg",
+      "src": "assets/media/images/photo-03-1400w.webp",
+      "srcset": "assets/media/images/photo-03-800w.webp 800w, assets/media/images/photo-03-1400w.webp 1400w",
+      "alt": "Rotor training rig with sensors and wiring, viewed from above.",
+      "caption": "Rotor training rig viewed from above",
+      "placements": [
+        "Gallery",
+        "Course card and detail: advanced-vibration-analysis-training"
+      ]
     },
     {
-      "id": "machinery-vibration-fundamentals-level-ii",
-      "src": "assets/images/machinery-vibration-fundamentals-level-ii.webp",
-      "alt": "Motor and rotor training rig with sensors and a vibration-analysis display",
-      "caption": "Machinery vibration fundamentals"
+      "id": "photo-04",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.26.jpeg",
+      "src": "assets/media/images/photo-04-1400w.webp",
+      "srcset": "assets/media/images/photo-04-800w.webp 800w, assets/media/images/photo-04-1400w.webp 1400w",
+      "alt": "Transparent rotor training kit and attached leads, viewed from above.",
+      "caption": "Transparent rotor kit viewed from above",
+      "placements": [
+        "Gallery"
+      ]
     },
     {
-      "id": "online-offline-vibration-measurement-systems",
-      "src": "assets/images/online-offline-vibration-measurement-systems.webp",
-      "alt": "Handheld vibration analyzer beside an instrumented electric motor",
-      "caption": "Online and offline vibration measurement systems"
+      "id": "photo-05",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.27 (1).jpeg",
+      "src": "assets/media/images/photo-05-1400w.webp",
+      "srcset": "assets/media/images/photo-05-800w.webp 800w, assets/media/images/photo-05-1400w.webp 1400w",
+      "alt": "Vibration measurement control panel with connected instrumentation.",
+      "caption": "Data-acquisition control panel",
+      "placements": [
+        "Gallery"
+      ]
     },
     {
-      "id": "digital-signal-processing-fundamentals",
-      "src": "assets/images/digital-signal-processing-fundamentals.webp",
-      "alt": "Laptop showing time waveform and spectrum plots beside data-acquisition equipment",
-      "caption": "Digital signal processing fundamentals"
+      "id": "photo-06",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.27.jpeg",
+      "src": "assets/media/images/photo-06-1400w.webp",
+      "srcset": "assets/media/images/photo-06-800w.webp 800w, assets/media/images/photo-06-1400w.webp 1400w",
+      "alt": "Close view of a rotor assembly with sensors and wiring.",
+      "caption": "Rotor assembly with sensors",
+      "placements": [
+        "Gallery",
+        "Course card and detail: introductory-machinery-vibration"
+      ]
     },
     {
-      "id": "bearing-fault-samples",
-      "src": "assets/images/five-bearing-fault-samples-arranged-side-by-side.webp",
-      "alt": "Five bearing fault samples arranged side by side",
-      "caption": "Bearing fault samples"
+      "id": "photo-07",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.28 (1).jpeg",
+      "src": "assets/media/images/photo-07-1400w.webp",
+      "srcset": "assets/media/images/photo-07-800w.webp 800w, assets/media/images/photo-07-1400w.webp 1400w",
+      "alt": "Rotor support and measurement leads on a training rig.",
+      "caption": "Close-up of rotor support and measurement leads",
+      "placements": [
+        "Gallery"
+      ]
     },
     {
-      "id": "rotor-balancing-rig",
-      "src": "assets/images/rotor-balancing-training-rig-with-red-cylindrical-rotor-cover.webp",
-      "alt": "Rotor balancing training rig with a red cylindrical rotor cover",
-      "caption": "Rotor balancing training rig"
+      "id": "photo-08",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.28.jpeg",
+      "src": "assets/media/images/photo-08-1400w.webp",
+      "srcset": "assets/media/images/photo-08-800w.webp 800w, assets/media/images/photo-08-1400w.webp 1400w",
+      "alt": "Close view of a rotor training assembly and its leads.",
+      "caption": "Rotor assembly and measurement leads",
+      "placements": [
+        "Gallery"
+      ]
     },
     {
-      "id": "rotor-kit-long",
-      "src": "assets/images/long-rotor-kit-mounted-on-a-training-bench.webp",
-      "alt": "Long rotor kit mounted on a training bench",
-      "caption": "Long rotor kit"
+      "id": "photo-09",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.40.jpeg",
+      "src": "assets/media/images/photo-09-1400w.webp",
+      "srcset": "assets/media/images/photo-09-800w.webp 800w, assets/media/images/photo-09-1400w.webp 1400w",
+      "alt": "Long rotor training kit arranged on a workbench.",
+      "caption": "Long rotor training kit on a workbench",
+      "placements": [
+        "Gallery",
+        "About section"
+      ]
     },
     {
-      "id": "acrylic-kit-hammer",
-      "src": "assets/images/transparent-rotor-training-kit-with-handheld-vibration-instrument.webp",
-      "alt": "Transparent rotor training kit with a handheld vibration instrument",
-      "caption": "Transparent rotor training kit"
+      "id": "photo-10",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.41 (1).jpeg",
+      "src": "assets/media/images/photo-10-1400w.webp",
+      "srcset": "assets/media/images/photo-10-800w.webp 800w, assets/media/images/photo-10-1400w.webp 1400w",
+      "alt": "Rotor training rig with measurement equipment on a workbench.",
+      "caption": "Rotor training rig with measurement equipment",
+      "placements": [
+        "Gallery"
+      ]
     },
     {
-      "id": "daq-case",
-      "src": "assets/images/open-protective-case-holding-data-acquisition-equipment.webp",
-      "alt": "Open protective case holding data-acquisition equipment",
-      "caption": "Data-acquisition case"
+      "id": "photo-11",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.41 (2).jpeg",
+      "src": "assets/media/images/photo-11-1400w.webp",
+      "srcset": "assets/media/images/photo-11-800w.webp 800w, assets/media/images/photo-11-1400w.webp 1400w",
+      "alt": "Rotor kit fitted with sensors and connected leads.",
+      "caption": "Rotor kit and connected sensors",
+      "placements": [
+        "Gallery"
+      ]
     },
     {
-      "id": "rotor-housing",
-      "src": "assets/images/rotor-housing.webp",
-      "alt": "Close-up of a rotor housing",
-      "caption": "Rotor housing"
+      "id": "photo-12",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.41.jpeg",
+      "src": "assets/media/images/photo-12-1400w.webp",
+      "srcset": "assets/media/images/photo-12-800w.webp 800w, assets/media/images/photo-12-1400w.webp 1400w",
+      "alt": "Rotor training kit with connected measurement instruments.",
+      "caption": "Rotor training kit with measurement instruments",
+      "placements": [
+        "Gallery"
+      ]
     },
     {
-      "id": "instructor-balaji",
-      "src": "assets/images/instructor-balaji.webp",
-      "alt": "Vibrosine trainer Srinivasa Raghavan Balaji",
-      "caption": "Srinivasa Raghavan Balaji"
+      "id": "photo-13",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.42 (1).jpeg",
+      "src": "assets/media/images/photo-13-1400w.webp",
+      "srcset": "assets/media/images/photo-13-800w.webp 800w, assets/media/images/photo-13-1400w.webp 1400w",
+      "alt": "Portable vibration analyzer beside an open protective case.",
+      "caption": "Portable vibration analyzer and protective case",
+      "placements": [
+        "Gallery"
+      ]
     },
     {
-      "id": "red-cylinder-kit",
-      "src": "assets/images/red-cylinder-kit.webp",
-      "alt": "Rotor balancing training rig with a red cylindrical rotor cover",
-      "caption": "Rotor balancing training rig"
+      "id": "photo-14",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.42.jpeg",
+      "src": "assets/media/images/photo-14-1400w.webp",
+      "srcset": "assets/media/images/photo-14-800w.webp 800w, assets/media/images/photo-14-1400w.webp 1400w",
+      "alt": "Rotor training equipment and instrumentation on a laboratory bench.",
+      "caption": "Rotor training setup on a laboratory bench",
+      "placements": [
+        "Gallery"
+      ]
     },
     {
-      "id": "balancing-rotor-gold",
-      "src": "assets/images/balancing-rotor-gold.webp",
-      "srcset": "assets/images/balancing-rotor-gold-800.webp 800w, assets/images/balancing-rotor-gold.webp 1400w",
-      "alt": "Motor-driven rotor with gold balancing discs",
-      "caption": "Gold-disc balancing rotor"
+      "id": "photo-15",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.43 (1).jpeg",
+      "src": "assets/media/images/photo-15-1400w.webp",
+      "srcset": "assets/media/images/photo-15-800w.webp 800w, assets/media/images/photo-15-1400w.webp 1400w",
+      "alt": "Open protective case containing data-acquisition equipment.",
+      "caption": "Open case containing data-acquisition equipment",
+      "placements": [
+        "Gallery",
+        "Course card and detail: two-day-online-course"
+      ]
     },
     {
-      "id": "motor-disc-meter",
-      "src": "assets/images/motor-disc-meter.webp",
-      "srcset": "assets/images/motor-disc-meter-800.webp 800w, assets/images/motor-disc-meter.webp 1400w",
-      "alt": "Electric motor, balancing disc, and handheld vibration meter",
-      "caption": "Motor, balancing disc, and meter"
+      "id": "photo-16",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.43.jpeg",
+      "src": "assets/media/images/photo-16-1400w.webp",
+      "srcset": "assets/media/images/photo-16-800w.webp 800w, assets/media/images/photo-16-1400w.webp 1400w",
+      "alt": "Rotor training rig and vibration analyzer on a workbench.",
+      "caption": "Rotor training rig with an analyzer",
+      "placements": [
+        "Gallery"
+      ]
+    },
+    {
+      "id": "photo-17",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.44.jpeg",
+      "src": "assets/media/images/photo-17-1400w.webp",
+      "srcset": "assets/media/images/photo-17-800w.webp 800w, assets/media/images/photo-17-1400w.webp 1400w",
+      "alt": "Long rotor training kit with a handheld measurement instrument.",
+      "caption": "Long rotor kit with a handheld instrument",
+      "placements": [
+        "Gallery"
+      ]
+    },
+    {
+      "id": "photo-18",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.45.jpeg",
+      "src": "assets/media/images/photo-18-1400w.webp",
+      "srcset": "assets/media/images/photo-18-800w.webp 800w, assets/media/images/photo-18-1400w.webp 1400w",
+      "alt": "Rotor shaft and support on a training rig.",
+      "caption": "Close-up of a rotor shaft and support",
+      "placements": [
+        "Gallery"
+      ]
+    },
+    {
+      "id": "photo-19",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.46.jpeg",
+      "src": "assets/media/images/photo-19-1400w.webp",
+      "srcset": "assets/media/images/photo-19-800w.webp 800w, assets/media/images/photo-19-1400w.webp 1400w",
+      "alt": "Electric motor and balancing rotor beside a handheld vibration meter.",
+      "caption": "Motor and balancing rotor with a handheld meter",
+      "placements": [
+        "Gallery",
+        "Consultancy pillar",
+        "Course card and detail: machinery-vibration-fundamentals-level-ii",
+        "Course card and detail: online-offline-vibration-measurement-systems"
+      ]
+    },
+    {
+      "id": "photo-20",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.47.jpeg",
+      "src": "assets/media/images/photo-20-1400w.webp",
+      "srcset": "assets/media/images/photo-20-800w.webp 800w, assets/media/images/photo-20-1400w.webp 1400w",
+      "alt": "Close-up of a gold balancing disc mounted on a rotor shaft.",
+      "caption": "Gold balancing disc and rotor shaft",
+      "placements": [
+        "Gallery"
+      ]
+    },
+    {
+      "id": "photo-21",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.48 (1).jpeg",
+      "src": "assets/media/images/photo-21-1400w.webp",
+      "srcset": "assets/media/images/photo-21-800w.webp 800w, assets/media/images/photo-21-1400w.webp 1400w",
+      "alt": "Electric motor and rotor setup with a handheld vibration meter.",
+      "caption": "Motor, rotor and vibration meter",
+      "placements": [
+        "Gallery",
+        "Course card and detail: vibration-analysis-and-rotor-balancing"
+      ]
+    },
+    {
+      "id": "photo-22",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.48.jpeg",
+      "src": "assets/media/images/photo-22-1400w.webp",
+      "srcset": "assets/media/images/photo-22-800w.webp 800w, assets/media/images/photo-22-1400w.webp 1400w",
+      "alt": "Rotor balancing rig with gold discs mounted on a horizontal shaft.",
+      "caption": "Rotor balancing rig with gold discs",
+      "placements": [
+        "Gallery",
+        "Course card and detail: intermediate-machinery-vibration-analysis-level-iii"
+      ]
+    },
+    {
+      "id": "photo-23",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.49.jpeg",
+      "src": "assets/media/images/photo-23-1400w.webp",
+      "srcset": "assets/media/images/photo-23-800w.webp 800w, assets/media/images/photo-23-1400w.webp 1400w",
+      "alt": "Rotor balancing rig and motor arranged on a workbench.",
+      "caption": "Full rotor balancing setup on a workbench",
+      "placements": [
+        "Gallery",
+        "Course card and detail: dynamic-balancing-of-rotors",
+        "Home hero",
+        "Recent training cards"
+      ]
+    },
+    {
+      "id": "photo-24",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.50.jpeg",
+      "src": "assets/media/images/photo-24-1400w.webp",
+      "srcset": "assets/media/images/photo-24-800w.webp 800w, assets/media/images/photo-24-1400w.webp 1400w",
+      "alt": "Handheld vibration meter and training equipment on a workbench.",
+      "caption": "Vibration meter and training equipment on a bench",
+      "placements": [
+        "Gallery"
+      ]
+    },
+    {
+      "id": "photo-25",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.51.jpeg",
+      "src": "assets/media/images/photo-25-1400w.webp",
+      "srcset": "assets/media/images/photo-25-800w.webp 800w, assets/media/images/photo-25-1400w.webp 1400w",
+      "alt": "Handheld measurement instrument beside a rotor training kit.",
+      "caption": "Measurement instrument beside a rotor kit",
+      "placements": [
+        "Gallery"
+      ]
+    },
+    {
+      "id": "photo-26",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.52.jpeg",
+      "src": "assets/media/images/photo-26-1400w.webp",
+      "srcset": "assets/media/images/photo-26-800w.webp 800w, assets/media/images/photo-26-1400w.webp 1400w",
+      "alt": "Vibration analyzer beside a rotor rig with measurement leads.",
+      "caption": "Vibration analyzer and instrumented rotor rig",
+      "placements": [
+        "Gallery"
+      ]
+    },
+    {
+      "id": "photo-27",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.53 (1).jpeg",
+      "src": "assets/media/images/photo-27-1400w.webp",
+      "srcset": "assets/media/images/photo-27-800w.webp 800w, assets/media/images/photo-27-1400w.webp 1400w",
+      "alt": "Digital RPM readout on a handheld measurement device.",
+      "caption": "Digital RPM readout on a meter",
+      "placements": [
+        "Gallery"
+      ]
+    },
+    {
+      "id": "photo-28",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.53.jpeg",
+      "src": "assets/media/images/photo-28-1400w.webp",
+      "srcset": "assets/media/images/photo-28-800w.webp 800w, assets/media/images/photo-28-1400w.webp 1400w",
+      "alt": "Acrylic rotor training kit and handheld vibration analyzer.",
+      "caption": "Acrylic rotor kit with a handheld analyzer",
+      "placements": [
+        "Gallery"
+      ]
+    },
+    {
+      "id": "photo-29",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.54.jpeg",
+      "src": "assets/media/images/photo-29-1400w.webp",
+      "srcset": "assets/media/images/photo-29-800w.webp 800w, assets/media/images/photo-29-1400w.webp 1400w",
+      "alt": "Acrylic rotor training assembly fitted with sensors.",
+      "caption": "Acrylic rotor assembly with sensors",
+      "placements": [
+        "Gallery"
+      ]
+    },
+    {
+      "id": "photo-30",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.55.jpeg",
+      "src": "assets/media/images/photo-30-1400w.webp",
+      "srcset": "assets/media/images/photo-30-800w.webp 800w, assets/media/images/photo-30-1400w.webp 1400w",
+      "alt": "Motor-driven rotor balancing rig on a training bench.",
+      "caption": "Motor-driven rotor rig on a training bench",
+      "placements": [
+        "Gallery"
+      ]
+    },
+    {
+      "id": "photo-31",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.56.jpeg",
+      "src": "assets/media/images/photo-31-1400w.webp",
+      "srcset": "assets/media/images/photo-31-800w.webp 800w, assets/media/images/photo-31-1400w.webp 1400w",
+      "alt": "Close view of a rotor bearing and shaft assembly.",
+      "caption": "Close view of a rotor bearing and shaft",
+      "placements": [
+        "Gallery"
+      ]
+    },
+    {
+      "id": "photo-32",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.57.jpeg",
+      "src": "assets/media/images/photo-32-1400w.webp",
+      "srcset": "assets/media/images/photo-32-800w.webp 800w, assets/media/images/photo-32-1400w.webp 1400w",
+      "alt": "Data-acquisition unit connected to multiple measurement leads.",
+      "caption": "Data-acquisition unit with connected leads",
+      "placements": [
+        "Gallery",
+        "AMC pillar",
+        "Course card and detail: digital-signal-processing-fundamentals"
+      ]
+    },
+    {
+      "id": "photo-33",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.58.jpeg",
+      "src": "assets/media/images/photo-33-1400w.webp",
+      "srcset": "assets/media/images/photo-33-800w.webp 800w, assets/media/images/photo-33-1400w.webp 1400w",
+      "alt": "Transparent rotor training assembly and attached wiring.",
+      "caption": "Transparent rotor training assembly",
+      "placements": [
+        "Gallery"
+      ]
+    },
+    {
+      "id": "photo-34",
+      "originalFile": "WhatsApp Image 2026-10-29 at 13.59.59.jpeg",
+      "src": "assets/media/images/photo-34-1400w.webp",
+      "srcset": "assets/media/images/photo-34-800w.webp 800w, assets/media/images/photo-34-1400w.webp 1400w",
+      "alt": "Rotor training kit with connected measurement instrumentation.",
+      "caption": "Rotor training kit with connected instrumentation",
+      "placements": [
+        "Gallery"
+      ]
+    },
+    {
+      "id": "photo-35",
+      "originalFile": "WhatsApp Image 2026-10-29 at 14.00.00.jpeg",
+      "src": "assets/media/images/photo-35-1400w.webp",
+      "srcset": "assets/media/images/photo-35-800w.webp 800w, assets/media/images/photo-35-1400w.webp 1400w",
+      "alt": "Close view of a rotor shaft and support on a training rig.",
+      "caption": "Rotor shaft and support on a training rig",
+      "placements": [
+        "Gallery"
+      ]
     }
   ]
 }

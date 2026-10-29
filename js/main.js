@@ -5,16 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("error", (event) => {
   const image = event.target;
   if (!(image instanceof HTMLImageElement)) return;
-  const wrapper = image.closest("[data-placeholder]");
-  if (!wrapper) return;
-  const placeholder = document.createElement("div");
-  placeholder.className = "photo-placeholder";
-  placeholder.setAttribute("role", "img");
-  placeholder.setAttribute("aria-label", wrapper.dataset.placeholder || "Replace with real photo");
-  const label = document.createElement("span");
-  label.textContent = wrapper.dataset.placeholder || "Replace with real photo";
-  placeholder.append(label);
-  wrapper.replaceWith(placeholder);
+  console.error("Site image could not be loaded:", image.currentSrc || image.src);
+  const figure = image.closest("figure");
+  if (figure) {
+    figure.remove();
+    return;
+  }
+  image.closest(".ph-media")?.remove();
 }, true);
 
 document.addEventListener("keydown", (event) => {
@@ -46,7 +43,7 @@ document.addEventListener("vibrosine:ready", () => {
     menuButton.setAttribute("aria-expanded", "true");
     menuButton.setAttribute("aria-label", "Close menu");
     backdrop.hidden = false;
-    menu.querySelector("a")?.focus();
+    menu.querySelector("summary, a")?.focus();
   };
 
   if (menuButton && menu && backdrop) {
@@ -63,7 +60,7 @@ document.addEventListener("vibrosine:ready", () => {
         menuButton.focus();
       }
       if (event.key === "Tab" && menuButton.getAttribute("aria-expanded") === "true") {
-        const focusable = [...menu.querySelectorAll("a[href], button:not([disabled])")];
+        const focusable = [...menu.querySelectorAll("a[href], button:not([disabled]), input:not([disabled]), summary, select:not([disabled])")];
         const first = focusable[0];
         const last = focusable[focusable.length - 1];
         if (event.shiftKey && document.activeElement === first) {
@@ -123,6 +120,15 @@ document.addEventListener("vibrosine:ready", () => {
       trigger.addEventListener("click", () => {
         if (!(lightboxImage instanceof HTMLImageElement) || !(lightboxCaption instanceof HTMLElement)) return;
         lightboxImage.src = trigger.dataset.lightboxSrc || "";
+        const srcset = trigger.dataset.lightboxSrcset || "";
+        if (srcset) {
+          lightboxImage.srcset = srcset.split(",").map((candidate) => {
+            const [path, descriptor] = candidate.trim().split(/\s+/);
+            return `${Vibrosine.join(path)} ${descriptor}`;
+          }).join(", ");
+        } else {
+          lightboxImage.removeAttribute("srcset");
+        }
         lightboxImage.alt = trigger.dataset.lightboxAlt || "";
         lightboxCaption.textContent = trigger.dataset.lightboxAlt || "";
         lightbox.showModal();
@@ -139,67 +145,61 @@ document.addEventListener("vibrosine:ready", () => {
     });
     lightbox.addEventListener("close", () => {
       lightboxImage?.removeAttribute("src");
+      lightboxImage?.removeAttribute("srcset");
     });
   }
 
-  const scheduleTabs = [...document.querySelectorAll("[data-schedule-tab]")];
-  if (scheduleTabs.length) {
-    scheduleTabs.forEach((tab) => {
-      tab.addEventListener("click", () => {
-        scheduleTabs.forEach((item) => {
-          const active = item === tab;
-          item.setAttribute("aria-selected", String(active));
-          item.tabIndex = active ? 0 : -1;
-          const panel = document.getElementById(`${item.dataset.scheduleTab}-panel`);
-          if (panel) panel.hidden = !active;
-        });
-      });
-      tab.addEventListener("keydown", (event) => {
-        if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
-        event.preventDefault();
-        const index = scheduleTabs.indexOf(tab);
-        const step = event.key === "ArrowRight" ? 1 : -1;
-        scheduleTabs[(index + step + scheduleTabs.length) % scheduleTabs.length].click();
-        scheduleTabs[(index + step + scheduleTabs.length) % scheduleTabs.length].focus();
-      });
-    });
-  }
+  const searchInputs = [...document.querySelectorAll("input[name='q']")];
+  const searchCards = [...document.querySelectorAll(".searchable-card")];
+  const filterButtons = [...document.querySelectorAll("[data-course-filter]")];
+  const query = new URLSearchParams(location.search).get("q") || "";
+  const requestedLevel = new URLSearchParams(location.search).get("level") || "all";
+  const levelMap = {
+    "category-i": "Category I",
+    "category-ii": "Category II",
+    "category-iii": "Category III",
+    other: "other"
+  };
+  let activeLevel = levelMap[requestedLevel] || "all";
+  for (const input of searchInputs) input.value = query;
 
-  document.querySelectorAll("[data-video-src]").forEach((trigger) => {
-    trigger.addEventListener("click", () => {
-      const source = trigger.dataset.videoSrc;
-      if (!source || !(trigger instanceof HTMLButtonElement)) return;
-      if (trigger.dataset.videoKind === "local") {
-        const video = document.createElement("video");
-        video.className = "video-frame";
-        video.controls = true;
-        video.autoplay = true;
-        video.playsInline = true;
-        video.preload = "metadata";
-        video.setAttribute("aria-label", trigger.getAttribute("aria-label") || "Training video");
-        const videoSource = document.createElement("source");
-        videoSource.src = source;
-        videoSource.type = "video/mp4";
-        video.append(videoSource);
-        video.addEventListener("error", () => {
-          const error = document.createElement("p");
-          error.className = "video-error";
-          error.setAttribute("role", "alert");
-          error.textContent = "This video could not be loaded. Please try again later.";
-          video.replaceWith(error);
-        }, { once: true });
-        trigger.replaceWith(video);
-        return;
-      }
-      const frame = document.createElement("iframe");
-      frame.className = "video-frame";
-      frame.src = source;
-      frame.title = trigger.getAttribute("aria-label") || "Embedded video";
-      frame.loading = "lazy";
-      frame.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-      frame.referrerPolicy = "strict-origin-when-cross-origin";
-      frame.allowFullscreen = true;
-      trigger.replaceWith(frame);
+  const updateSearch = () => {
+    const activeQuery = searchInputs.find((input) => input.value.trim())?.value.trim().toLowerCase() || "";
+    let courseMatches = 0;
+    let knowledgeMatches = 0;
+    for (const card of searchCards) {
+      const matchesText = !activeQuery || (card.dataset.searchText || card.textContent || "").toLowerCase().includes(activeQuery);
+      const cardLevel = card.dataset.courseLevel;
+      const matchesLevel = !cardLevel || activeLevel === "all" || cardLevel === activeLevel;
+      const hasActiveFilter = Boolean(activeQuery) || activeLevel !== "all";
+      const visible = matchesText && matchesLevel && (hasActiveFilter || card.dataset.searchDefaultHidden !== "true");
+      card.hidden = !visible;
+      if (visible && card.classList.contains("course-card")) courseMatches++;
+      if (visible && card.classList.contains("knowledge-card")) knowledgeMatches++;
+    }
+    const hasCourseFilters = document.querySelector(".course-grid");
+    const results = hasCourseFilters
+      ? `${courseMatches} course${courseMatches === 1 ? "" : "s"}${activeQuery ? ` and ${knowledgeMatches} article${knowledgeMatches === 1 ? "" : "s"}` : ""}`
+      : `${knowledgeMatches} article${knowledgeMatches === 1 ? "" : "s"}`;
+    for (const status of document.querySelectorAll(".search-status, [data-course-status]")) {
+      status.textContent = activeQuery || activeLevel !== "all"
+        ? (courseMatches + knowledgeMatches ? results : "No matching courses or articles.")
+        : "";
+    }
+    for (const button of filterButtons) {
+      const active = (button.dataset.courseFilter || "all") === activeLevel;
+      button.setAttribute("aria-pressed", String(active));
+    }
+  };
+
+  for (const input of searchInputs) input.addEventListener("input", updateSearch);
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.courseFilter || "all";
+      activeLevel = filter;
+      updateSearch();
     });
   });
+  updateSearch();
+
 });
