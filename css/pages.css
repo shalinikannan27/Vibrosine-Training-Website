@@ -197,6 +197,10 @@ body[data-page="home"] .hero .search-status:not(:empty) { max-width: fit-content
 }
 @media (max-width: 759px) {
   .hero-layout { gap: 2rem; }
+  body[data-page="home"] .hero {
+    background-image: linear-gradient(rgba(5,24,36,.58), rgba(5,24,36,.58)), url("../assets/media/images/photo-19-800w.webp");
+    background-position: 65% center;
+  }
   .home-main { padding: 0 1.25rem; }
   .course-grid { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
   .course-grid > .card { width: 100%; }
@@ -211,6 +215,7 @@ body[data-page="home"] .hero .search-status:not(:empty) { max-width: fit-content
 }
 @media (max-width: 480px) {
   .hero { padding: 3.7rem 0 3.5rem; }
+  body[data-page="home"] .hero { background-position: 68% center; }
   .hero .btns { align-items: stretch; }
   .hero .btns .btn { flex: 1 1 100%; }
   .wrap { width: min(100% - 2rem, var(--wrap)); }
