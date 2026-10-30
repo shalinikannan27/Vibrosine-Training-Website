@@ -21,6 +21,7 @@ Then open http://localhost:8080
 | Video titles, source files, posters and placements | `data/videos.json` |
 | Company name, tagline, hero text, welcome story, help, instructor bio and photo, contact address, phone, email and WhatsApp | `data/site.json` |
 | Brand logo and trainer portrait files | `assets/brand/` |
+| Favicons, app icons, and social share image | `assets/` |
 
 Keep published company information supported by supplied source material.
 

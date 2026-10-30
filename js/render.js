@@ -133,7 +133,7 @@
       <a href="mailto:${escapeHtml(contact.email)}">${escapeHtml(contact.email)}</a>
     </div></div>
     <div class="navbar"><div class="wrap navbar-inner">
-      <a class="brand" href="${home}" aria-label="Vibrosine home"><img src="${join(site.brandLogo)}" alt="" width="172" height="54"></a>
+      <a class="brand" href="${home}" aria-label="Vibrosine home"><img src="${join(site.brandLogo)}" alt="" width="190" height="60"></a>
       <button id="menu-btn" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu"><span></span><span></span><span></span></button>
       <nav id="main-nav" aria-label="Main navigation"><ul id="nav-list">
         <li><a href="${home}#about">About</a></li>
@@ -153,11 +153,11 @@
   function footerHTML(site) {
     const contact = site.contact;
     return `<div class="wrap footer-grid">
-      <div class="footer-about"><a class="footer-brand" href="${join("index.html")}">${escapeHtml(site.shortName)}</a><p>${escapeHtml(site.tagline)}</p></div>
+      <div class="footer-about"><a class="footer-brand" href="${join("index.html")}"><img src="${escapeHtml(join(site.brandLogo))}" alt="${escapeHtml(site.name)}"></a></div>
       <div><h2>Courses</h2><ul><li><a href="${join("courses/index.html")}">Training courses</a></li><li><a href="${join("courses/index.html?level=category-i")}">Category I</a></li><li><a href="${join("courses/index.html?level=category-ii")}">Category II</a></li><li><a href="${join("courses/index.html?level=category-iii")}">Category III</a></li></ul></div>
       <div><h2>Services</h2><ul><li><a href="${join("services/index.html#consultancy-services")}">Consultancy</a></li><li><a href="${join("services/index.html#amc")}">AMC</a></li></ul></div>
       <div><h2>Vibrosine</h2><ul><li><a href="${join("index.html#about")}">About</a></li><li><a href="${join("schedule/index.html")}">Sessions</a></li><li><a href="${join("gallery/index.html")}">Gallery</a></li><li><a href="${join("videos/index.html")}">Videos</a></li><li><a href="${join("index.html#contact")}">Contact</a></li></ul></div>
-      <address class="footer-contact"><h2>Contact</h2><a href="${escapeHtml(contact.phoneHref)}">${escapeHtml(contact.phoneDisplay)}</a><a href="mailto:${escapeHtml(contact.email)}">${escapeHtml(contact.email)}</a><span>${escapeHtml(contact.address)}</span></address>
+      <address class="footer-contact"><h2>Contact</h2><a href="${escapeHtml(contact.phoneHref)}">${escapeHtml(contact.phoneDisplay)}</a><a href="mailto:${escapeHtml(contact.email)}">${escapeHtml(contact.email)}</a><a href="${escapeHtml(contact.linkedin)}" target="_blank" rel="noopener noreferrer">LinkedIn</a><span>${escapeHtml(contact.address)}</span></address>
       <p class="copyright">&copy; ${escapeHtml(site.year)} ${escapeHtml(site.name)}</p>
     </div>`;
   }
@@ -171,7 +171,8 @@
     const enquiry = whatsappHref(contact.whatsapp, "Hello Vibrosine, I would like to make an enquiry.");
     return `<li>Phone: <a href="${escapeHtml(contact.phoneHref)}">${escapeHtml(contact.phoneDisplay)}</a></li>
       <li>Email: <a href="mailto:${escapeHtml(contact.email)}">${escapeHtml(contact.email)}</a></li>
-      <li>WhatsApp: <a href="${escapeHtml(enquiry)}" target="_blank" rel="noopener">Chat with us</a></li>
+    <li>LinkedIn: <a href="${escapeHtml(contact.linkedin)}" target="_blank" rel="noopener noreferrer">Vibrosine Training and Consultancy Services</a></li>
+    <li>WhatsApp: <a href="${escapeHtml(enquiry)}" target="_blank" rel="noopener">Chat with us</a></li>
       <li class="contact-address">Address: ${escapeHtml(contact.address)}</li>`;
   }
 

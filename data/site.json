@@ -1,7 +1,7 @@
 {
   "name": "Vibrosine Training and Consultancy Services",
   "shortName": "VIBROSINE",
-  "brandLogo": "assets/brand/vibrosine-logo.jpeg",
+  "brandLogo": "assets/brand/vibrosine-logo.png",
   "tagline": "Helping You Understand the Sign of Your Sine",
   "year": 2026,
   "hero": {
@@ -41,6 +41,7 @@
     "phoneDisplay": "+91 98416 78380",
     "phoneHref": "tel:+919841678380",
     "email": "vibrosine@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/vibrosine-training-and-consultancy-services-b23923156/",
     "address": "6C, 104, Pristine Acres, Phase 1, Nookampalayam Main Road, Perumbakkam, Chennai - 600100",
     "whatsapp": "https://wa.me/919841678380"
   }

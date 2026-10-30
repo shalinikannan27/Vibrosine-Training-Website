@@ -35,7 +35,7 @@
 .navbar.menu-open { z-index: 42; background: #fff; backdrop-filter: none; }
 .navbar-inner { display: flex; min-height: 76px; align-items: center; justify-content: space-between; gap: 1.4rem; }
 .brand { flex: 0 0 auto; display: inline-flex; align-items: center; text-decoration: none; }
-.brand img { width: 172px; height: 54px; object-fit: contain; }
+.brand img { width: 190px; height: auto; object-fit: contain; }
 #main-nav { margin-left: auto; }
 nav ul { display: flex; align-items: center; gap: clamp(.5rem, 1.4vw, 1.35rem); padding: 0; margin: 0; list-style: none; }
 nav li a:not(.btn) { display: inline-flex; align-items: center; min-height: 44px; padding: .3rem .1rem; color: var(--navy); font-size: .93rem; font-weight: 600; text-decoration: none; white-space: nowrap; }
@@ -44,7 +44,8 @@ nav li a:not(.btn):hover, nav li a[aria-current="page"] { color: var(--teal); }
 #menu-btn { display: none; }
 .nav-backdrop { display: none; }
 .footer-inner { display: grid; gap: 1.25rem; align-items: center; }
-.footer-brand { color: #fff; font: 700 1.5rem var(--serif); text-decoration: none; }
+.footer-brand { display: inline-flex; align-items: center; text-decoration: none; }
+.footer-brand img { width: 200px; height: auto; }
 .footer-contact { display: grid; justify-items: start; gap: .35rem; font-style: normal; }
 .footer-contact a { color: #fff; text-decoration: underline; text-decoration-color: rgba(255,255,255,.55); text-underline-offset: .18em; }
 .footer-contact a:hover { color: var(--orange); }
@@ -136,7 +137,7 @@ footer { padding: 2.2rem 0 6rem; background: linear-gradient(110deg, #082f48, #1
   .contact-strip-inner a { gap: .25rem; font-size: .72rem; white-space: nowrap; }
   .contact-strip-inner svg { width: 13px; height: 13px; }
   .navbar-inner { min-height: 64px; gap: .6rem; }
-  .brand img { width: min(172px, 46vw); height: 54px; }
+  .brand img { width: min(190px, 54vw); height: auto; }
   #menu-btn { width: 46px; height: 46px; flex-basis: 46px; }
   footer { padding-bottom: calc(6rem + env(safe-area-inset-bottom)); }
 }
