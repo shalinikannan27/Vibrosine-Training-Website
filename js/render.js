@@ -127,10 +127,7 @@
       `<li><a href="${join("services/index.html#consultancy-services")}">Consultancy</a></li>`,
       `<li><a href="${join("services/index.html#amc")}">AMC</a></li>`
     ].join("");
-    const resourceLinks = [
-      `<li><a href="${join("resources/index.html")}">Vibration knowledge</a></li>`,
-      `<li><a href="${join("videos/index.html")}">Videos</a></li>`
-    ].join("");
+    const resourceLinks = `<li><a href="${join("videos/index.html")}">Videos</a></li>`;
     return `<div class="contact-strip"><div class="wrap contact-strip-inner">
       <a href="${escapeHtml(contact.phoneHref)}">${escapeHtml(contact.phoneDisplay)}</a>
       <a href="mailto:${escapeHtml(contact.email)}">${escapeHtml(contact.email)}</a>
@@ -142,11 +139,11 @@
         <li><a href="${home}#about">About</a></li>
         <li><details class="nav-group"><summary>Training</summary><ul class="nav-submenu">${trainingLinks}</ul></details></li>
         <li><details class="nav-group"><summary>Services</summary><ul class="nav-submenu">${serviceLinks}</ul></details></li>
-        <li><a href="${join("schedule/index.html")}">Schedule</a></li>
+        <li><a href="${join("schedule/index.html")}">Sessions</a></li>
         <li><details class="nav-group"><summary>Resources</summary><ul class="nav-submenu">${resourceLinks}</ul></details></li>
         <li><a href="${join("gallery/index.html")}">Gallery</a></li>
         <li><a href="${home}#contact">Contact</a></li>
-        <li class="nav-search-item"><form class="nav-search" role="search" action="${home}#site-search" method="get"><label class="sr-only" for="nav-search-input">Search courses and knowledge</label><input id="nav-search-input" type="search" name="q" value="${escapeHtml(currentQuery)}" placeholder="Search courses & knowledge"><button type="submit" aria-label="Search">⌕</button></form></li>
+        <li class="nav-search-item"><form class="nav-search" role="search" action="${home}#site-search" method="get"><label class="sr-only" for="nav-search-input">Search courses</label><input id="nav-search-input" type="search" name="q" value="${escapeHtml(currentQuery)}" placeholder="Search courses"><button type="submit" aria-label="Search">⌕</button></form></li>
         <li class="nav-cta-wrap"><a class="btn btn-primary nav-cta" href="${escapeHtml(enquiry)}" target="_blank" rel="noopener">Enquire now</a></li>
       </ul></nav>
     </div></div>
@@ -159,7 +156,7 @@
       <div class="footer-about"><a class="footer-brand" href="${join("index.html")}">${escapeHtml(site.shortName)}</a><p>${escapeHtml(site.tagline)}</p></div>
       <div><h2>Courses</h2><ul><li><a href="${join("courses/index.html")}">Training courses</a></li><li><a href="${join("courses/index.html?level=category-i")}">Category I</a></li><li><a href="${join("courses/index.html?level=category-ii")}">Category II</a></li><li><a href="${join("courses/index.html?level=category-iii")}">Category III</a></li></ul></div>
       <div><h2>Services</h2><ul><li><a href="${join("services/index.html#consultancy-services")}">Consultancy</a></li><li><a href="${join("services/index.html#amc")}">AMC</a></li></ul></div>
-      <div><h2>Vibrosine</h2><ul><li><a href="${join("index.html#about")}">About</a></li><li><a href="${join("schedule/index.html")}">Schedule</a></li><li><a href="${join("gallery/index.html")}">Gallery</a></li><li><a href="${join("videos/index.html")}">Videos</a></li><li><a href="${join("resources/index.html")}">Resources</a></li><li><a href="${join("index.html#contact")}">Contact</a></li></ul></div>
+      <div><h2>Vibrosine</h2><ul><li><a href="${join("index.html#about")}">About</a></li><li><a href="${join("schedule/index.html")}">Sessions</a></li><li><a href="${join("gallery/index.html")}">Gallery</a></li><li><a href="${join("videos/index.html")}">Videos</a></li><li><a href="${join("index.html#contact")}">Contact</a></li></ul></div>
       <address class="footer-contact"><h2>Contact</h2><a href="${escapeHtml(contact.phoneHref)}">${escapeHtml(contact.phoneDisplay)}</a><a href="mailto:${escapeHtml(contact.email)}">${escapeHtml(contact.email)}</a><span>${escapeHtml(contact.address)}</span></address>
       <p class="copyright">&copy; ${escapeHtml(site.year)} ${escapeHtml(site.name)}</p>
     </div>`;
@@ -178,9 +175,8 @@
       <li class="contact-address">Address: ${escapeHtml(contact.address)}</li>`;
   }
 
-  function pillarMarkup(title, summary, imageId, href, linkLabel) {
-    const image = mediaItem(imageId);
-    return `<article class="card pillar-card">${imageMarkup(image)}
+  function pillarMarkup(title, summary, href, linkLabel) {
+    return `<article class="card pillar-card">
       <div class="body"><p class="eyebrow">${escapeHtml(title)}</p><h2>${escapeHtml(title)}</h2>
       <p>${escapeHtml(summary)}</p><a class="text-link" href="${join(href)}">${escapeHtml(linkLabel)} <span aria-hidden="true">→</span></a></div>
     </article>`;
@@ -190,9 +186,9 @@
     const host = document.querySelector("[data-bind='pillars']");
     if (!host) return;
     host.innerHTML = [
-      pillarMarkup("Training", "Training courses for technicians, supervisors and engineers, with workshops and demonstrations.", "photo-02", "courses/index.html", "Explore training"),
-      pillarMarkup("Consultancy", "Investigate equipment troubles, analyze vibration and recommend corrective tasks.", "photo-19", "services/index.html#consultancy-services", "Explore consultancy"),
-      pillarMarkup("AMC", "Annual maintenance support for selected troublesome machines and monthly performance reporting.", "photo-32", "services/index.html#amc", "Explore AMC")
+      pillarMarkup("Training", "Training courses for technicians, supervisors and engineers, with workshops and demonstrations.", "courses/index.html", "Explore training"),
+      pillarMarkup("Consultancy", "Investigate equipment troubles, analyze vibration and recommend corrective tasks.", "services/index.html#consultancy-services", "Explore consultancy"),
+      pillarMarkup("AMC", "Annual maintenance support for selected troublesome machines and monthly performance reporting.", "services/index.html#amc", "Explore AMC")
     ].join("");
   }
 
@@ -290,8 +286,11 @@
   }
 
   function scheduleEntry(item) {
-    const meta = [item.location, item.mode].filter((value) => value && !/to be confirmed/i.test(value)).join(" · ");
-    return `<li class="schedule-entry"><span class="schedule-entry-name">${escapeHtml(item.title)}${meta ? `<small>${escapeHtml(meta)}</small>` : ""}</span><time datetime="${escapeHtml(item.startDate)}">${escapeHtml(dateRange(item))}</time></li>`;
+    const details = [
+      item.mode && !/to be confirmed/i.test(item.mode) ? `<span><strong>Format:</strong> ${escapeHtml(item.mode)}</span>` : "",
+      item.location && !/to be confirmed/i.test(item.location) ? `<span><strong>Location:</strong> ${escapeHtml(item.location)}</span>` : ""
+    ].filter(Boolean);
+    return `<li class="session-item"><time class="session-date" datetime="${escapeHtml(item.startDate)}">${escapeHtml(dateRange(item))}</time><article class="session-card"><h2 class="session-title">${escapeHtml(item.title)}</h2>${details.length ? `<p class="session-meta">${details.join("")}</p>` : ""}</article></li>`;
   }
 
   async function renderSchedule() {
@@ -301,28 +300,21 @@
     const data = await loadJSON("schedule.json");
     const sessions = [...(data.past || [])].sort((a, b) => b.startDate.localeCompare(a.startDate));
     if (past) {
-      const grouped = new Map();
-      for (const item of sessions) {
-        const year = item.startDate.slice(0, 4);
-        const month = item.startDate.slice(0, 7);
-        if (!grouped.has(year)) grouped.set(year, new Map());
-        const months = grouped.get(year);
-        if (!months.has(month)) months.set(month, []);
-        months.get(month).push(item);
-      }
-      past.innerHTML = [...grouped.entries()].map(([year, months], yearIndex) => {
-        const monthGroups = [...months.entries()].map(([month, items], monthIndex) => {
-          const title = formatDate(`${month}-01`, { month: "long", year: "numeric" });
-          return `<details class="past-month"${yearIndex === 0 && monthIndex === 0 ? " open" : ""}><summary>${escapeHtml(title)}<span>${items.length} session${items.length === 1 ? "" : "s"}</span></summary><ul class="schedule-list">${items.map(scheduleEntry).join("")}</ul></details>`;
-        }).join("");
-        const count = [...months.values()].reduce((sum, items) => sum + items.length, 0);
-        return `<details class="past-year"${yearIndex < 2 ? " open" : ""}><summary>${escapeHtml(year)}<span>${count} session${count === 1 ? "" : "s"}</span></summary>${monthGroups}</details>`;
-      }).join("");
+      past.innerHTML = sessions.length
+        ? `<ol class="session-timeline" aria-label="Past training sessions">${sessions.map(scheduleEntry).join("")}</ol>`
+        : `<p class="schedule-empty">No recorded training sessions yet.</p>`;
     }
     if (recent) {
-      const image = mediaItem("photo-23");
-      recent.innerHTML = sessions.slice(0, 3).map((item) =>
-        `<article class="card training-batch">${imageMarkup(image)}<div class="body"><h3>${escapeHtml(item.title)}</h3><p class="meta">${escapeHtml(dateRange(item))}</p>${item.location || item.mode ? `<p class="batch-meta">${escapeHtml([item.location, item.mode].filter((value) => value && !/to be confirmed/i.test(value)).join(" · "))}</p>` : ""}<a class="text-link" href="${join("schedule/index.html")}">View schedule <span aria-hidden="true">→</span></a></div></article>`
+      const recentImages = ["photo-02", "photo-19", "photo-32"];
+      const seenTitles = new Set();
+      const recentSessions = sessions.filter((item) => {
+        const title = item.title.trim().toLocaleLowerCase();
+        if (seenTitles.has(title)) return false;
+        seenTitles.add(title);
+        return true;
+      }).slice(0, 3);
+      recent.innerHTML = recentSessions.map((item, index) =>
+        `<article class="card training-batch">${imageMarkup(mediaItem(recentImages[index]))}<div class="body"><h3>${escapeHtml(item.title)}</h3><p class="meta">${escapeHtml(dateRange(item))}</p>${item.location || item.mode ? `<p class="batch-meta">${escapeHtml([item.location, item.mode].filter((value) => value && !/to be confirmed/i.test(value)).join(" · "))}</p>` : ""}<a class="text-link" href="${join("schedule/index.html")}">View training <span aria-hidden="true">→</span></a></div></article>`
       ).join("");
     }
   }
@@ -351,42 +343,6 @@
         `<article class="card video-card home-video-card">${videoElement(item)}<div class="body"><h3>${escapeHtml(item.title)}</h3><p class="meta">${escapeHtml(item.description)}</p><a href="${join("videos/index.html")}">View all videos <span aria-hidden="true">→</span></a></div></article>`
       ).join("");
     }
-  }
-
-  async function renderKnowledge() {
-    const hosts = document.querySelectorAll("[data-bind='knowledge']");
-    const articleHost = document.querySelector("[data-bind='knowledge-article']");
-    if (!hosts.length && !articleHost) return;
-    const data = await loadJSON("knowledge.json");
-    const intro = document.querySelector("[data-bind='knowledge-intro']");
-    if (intro) intro.textContent = data.intro;
-    for (const host of hosts) {
-      host.innerHTML = data.articles.map((article) => {
-        const searchText = [article.title, article.tag, article.summary, ...article.body].join(" ");
-        return `<article class="card knowledge-card searchable-card" data-search-text="${escapeHtml(searchText.toLowerCase())}"><div class="body"><span class="tag">${escapeHtml(article.tag)}</span><h3>${escapeHtml(article.title)}</h3><p class="meta">${escapeHtml(article.summary)}</p><a class="text-link" href="${join(`resources/article.html?id=${encodeURIComponent(article.id)}`)}">Read more <span aria-hidden="true">→</span></a></div></article>`;
-      }).join("");
-    }
-    if (articleHost) {
-      const id = new URLSearchParams(location.search).get("id");
-      const article = data.articles.find((item) => item.id === id);
-      if (!article) {
-        articleHost.innerHTML = `<h1>Vibration knowledge</h1><p>Choose an article from <a href="${join("resources/index.html")}">Knowledge and tools</a>.</p>`;
-        return;
-      }
-      document.title = `${article.title} | Vibrosine`;
-      const description = document.querySelector("meta[name='description']");
-      if (description) description.content = article.summary;
-      const canonical = document.querySelector("link[rel='canonical']");
-      if (canonical) canonical.href = `https://vibrosine.com/resources/article.html?id=${encodeURIComponent(article.id)}`;
-      articleHost.innerHTML = `<span class="tag">${escapeHtml(article.tag)}</span><h1>${escapeHtml(article.title)}</h1><p class="lead article-summary">${escapeHtml(article.summary)}</p>${article.body.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}<a class="btn btn-secondary" href="${join("resources/index.html")}">Back to knowledge</a>`;
-    }
-  }
-
-  async function renderFAQ() {
-    const host = document.querySelector("[data-bind='faq']");
-    if (!host) return;
-    const data = await loadJSON("faq.json");
-    host.innerHTML = data.items.map((item) => `<details class="faq-item"><summary>${escapeHtml(item.question)}</summary><p>${escapeHtml(item.answer)}</p></details>`).join("");
   }
 
   async function renderCourseDetail(contact) {
@@ -448,8 +404,6 @@
         renderSchedule(),
         Promise.resolve(renderGallery()),
         renderVideos(),
-        renderKnowledge(),
-        renderFAQ(),
         renderCourseDetail(site.contact)
       ]);
     } catch (error) {

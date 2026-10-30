@@ -166,7 +166,6 @@ document.addEventListener("vibrosine:ready", () => {
   const updateSearch = () => {
     const activeQuery = searchInputs.find((input) => input.value.trim())?.value.trim().toLowerCase() || "";
     let courseMatches = 0;
-    let knowledgeMatches = 0;
     for (const card of searchCards) {
       const matchesText = !activeQuery || (card.dataset.searchText || card.textContent || "").toLowerCase().includes(activeQuery);
       const cardLevel = card.dataset.courseLevel;
@@ -175,15 +174,12 @@ document.addEventListener("vibrosine:ready", () => {
       const visible = matchesText && matchesLevel && (hasActiveFilter || card.dataset.searchDefaultHidden !== "true");
       card.hidden = !visible;
       if (visible && card.classList.contains("course-card")) courseMatches++;
-      if (visible && card.classList.contains("knowledge-card")) knowledgeMatches++;
     }
     const hasCourseFilters = document.querySelector(".course-grid");
-    const results = hasCourseFilters
-      ? `${courseMatches} course${courseMatches === 1 ? "" : "s"}${activeQuery ? ` and ${knowledgeMatches} article${knowledgeMatches === 1 ? "" : "s"}` : ""}`
-      : `${knowledgeMatches} article${knowledgeMatches === 1 ? "" : "s"}`;
+    const results = `${courseMatches} course${courseMatches === 1 ? "" : "s"}`;
     for (const status of document.querySelectorAll(".search-status, [data-course-status]")) {
       status.textContent = activeQuery || activeLevel !== "all"
-        ? (courseMatches + knowledgeMatches ? results : "No matching courses or articles.")
+        ? (courseMatches ? results : "No matching courses.")
         : "";
     }
     for (const button of filterButtons) {

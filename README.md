@@ -1,6 +1,6 @@
 # Vibrosine Training website
 
-Static site for Vibrosine Training and Consultancy Services. This folder is the site root. Pages are HTML; courses, services, schedule, photos, videos, knowledge articles, FAQs and contact details live in JSON so you can update the site without editing markup.
+Static site for Vibrosine Training and Consultancy Services. This folder is the site root. Pages are HTML; courses, services, training sessions, photos, videos and contact details live in JSON so you can update the site without editing markup.
 
 Opening `index.html` as a file will not load the JSON. Serve the folder:
 
@@ -16,17 +16,13 @@ Then open http://localhost:8080
 | --- | --- |
 | Course titles, summaries, overviews and topics | `data/courses.json` |
 | Consultancy and annual maintenance contract summaries and descriptions | `data/services.json` |
-| Past sessions and their training dates | `data/schedule.json` |
+| Past training sessions and their dates | `data/schedule.json` |
 | Photo inventory, captions and placements | `data/media.json` |
 | Video titles, source files, posters and placements | `data/videos.json` |
-| Knowledge articles | `data/knowledge.json` |
-| Frequently asked questions | `data/faq.json` |
 | Company name, tagline, hero text, welcome story, help, instructor bio and photo, contact address, phone, email and WhatsApp | `data/site.json` |
 | Brand logo and trainer portrait files | `assets/brand/` |
 
 Keep published company information supported by supplied source material.
-
-The knowledge articles are general engineering explanations. Ask the client to review them before publication.
 
 ### Adding a course
 
@@ -66,10 +62,10 @@ vibrosine/
   courses/index.html         Full course listing (cards from courses.json)
   courses/course.html        One reusable detail page (?id=)
   services/index.html        Service cards (from services.json)
-  schedule/index.html        Past training sessions
+  schedule/index.html        Training sessions
   gallery/index.html
   videos/index.html
-  resources/index.html
+  resources/index.html     Redirects to the videos page
   css/                       tokens.css, base.css, components.css, pages.css
   js/main.js                 Menu and WhatsApp enquiry form
   js/render.js               Loads JSON and builds cards

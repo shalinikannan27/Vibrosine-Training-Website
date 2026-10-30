@@ -209,12 +209,12 @@ footer { padding: 2.2rem 0 6rem; background: linear-gradient(110deg, #082f48, #1
 .search-control .btn { flex: 0 0 auto; }
 .hero-search { max-width: 540px; margin-top: 1.5rem; padding: 1.2rem; border-color: rgba(255,255,255,.3); border-radius: 16px; background: rgba(255,255,255,.98); box-shadow: 0 12px 30px rgba(2,22,34,.18); }
 .hero-search > label { color: var(--navy); font-size: .9rem; }
-.search-status { color: var(--muted); font-size: .88rem; }
+.search-status, [data-course-status] { color: #000; font-size: .88rem; }
 .nav-search-item { display: flex; align-items: center; }
 .pillar-section { padding: 2rem 0 1rem; background: #fff; }
 .pillar-card { min-height: 100%; }
-.pillar-card > .ph-media, .service-card > figure .ph-media { width: 100%; aspect-ratio: 16 / 10; }
-.pillar-card > .ph-media img, .service-card > figure img { width: 100%; height: 100%; object-fit: cover; }
+.service-card > figure .ph-media { width: 100%; aspect-ratio: 16 / 10; }
+.service-card > figure img { width: 100%; height: 100%; object-fit: cover; }
 .pillar-card .eyebrow { margin-bottom: -.2rem; }
 .pillar-card .body { gap: .65rem; }
 .service-card > figure { margin: 0; }
@@ -229,13 +229,6 @@ footer { padding: 2.2rem 0 6rem; background: linear-gradient(110deg, #082f48, #1
 .article-detail > p:not(.lead) { max-width: 70ch; color: #d3e6e9; }
 .article-detail .article-summary { color: #fff; }
 .article-detail .btn { width: fit-content; margin-top: .5rem; }
-.faq-item { margin-bottom: .75rem; }
-.faq-item summary { list-style: none; }
-.faq-item summary::-webkit-details-marker { display: none; }
-.faq-item summary::after { float: right; content: "+"; color: var(--teal); font-size: 1.2rem; }
-.faq-item[open] summary::after { content: "−"; }
-.faq-item p { max-width: 75ch; }
-
 @media (max-width: 1180px) {
   .navbar-inner { gap: .7rem; }
   #menu-btn { position: relative; z-index: 44; }
