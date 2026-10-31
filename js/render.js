@@ -43,13 +43,13 @@
     return `<div class="ph-media ${escapeHtml(className)}"><img src="${escapeHtml(join(item.src))}"${srcset} alt="${escapeHtml(item.alt)}" loading="lazy" decoding="async"></div>`;
   }
 
-  function mediaFigure(item, className = "", lightbox = false) {
+  function mediaFigure(item, className = "", lightbox = false, caption = item?.caption) {
     if (!item) return "";
     const image = imageMarkup(item);
     const display = lightbox
       ? `<button class="gallery-item" type="button" data-lightbox-src="${escapeHtml(join(item.src))}" data-lightbox-srcset="${escapeHtml(item.srcset || "")}" data-lightbox-alt="${escapeHtml(item.alt)}" aria-label="View larger image: ${escapeHtml(item.alt)}">${image}</button>`
       : image;
-    return `<figure class="${escapeHtml(className)}">${display}${item.caption ? `<figcaption>${escapeHtml(item.caption)}</figcaption>` : ""}</figure>`;
+    return `<figure class="${escapeHtml(className)}">${display}${caption ? `<figcaption>${escapeHtml(caption)}</figcaption>` : ""}</figure>`;
   }
 
   function videoElement(item, className = "video-player") {
@@ -226,7 +226,8 @@
     const helpItems = document.querySelector("[data-bind='help-items']");
     if (helpItems) helpItems.innerHTML = site.help.items.map((text) => `<li>${escapeHtml(text)}</li>`).join("");
     const aboutImage = document.querySelector("[data-bind='about-media']");
-    if (aboutImage) aboutImage.innerHTML = mediaFigure(mediaBySource(site.about.image), "about-photo");
+    const aboutPhoto = mediaBySource(site.about.image);
+    if (aboutImage) aboutImage.innerHTML = mediaFigure(aboutPhoto, "about-photo", false, aboutPhoto?.aboutCaption || aboutPhoto?.caption);
     renderPillars();
     const structuredData = document.querySelector("#organization-schema");
     if (structuredData) {

@@ -49,7 +49,7 @@
       "src": "assets/media/images/photo-01-1400w.webp",
       "srcset": "assets/media/images/photo-01-800w.webp 800w, assets/media/images/photo-01-1400w.webp 1400w",
       "alt": "Handheld vibration meter showing a digital RPM display.",
-      "caption": "Digital RPM display on a handheld vibration meter",
+      "caption": "RK4 Rotor Kit Speed Controller",
       "placements": [
         "Gallery"
       ]
@@ -60,7 +60,7 @@
       "src": "assets/media/images/photo-02-1400w.webp",
       "srcset": "assets/media/images/photo-02-800w.webp 800w, assets/media/images/photo-02-1400w.webp 1400w",
       "alt": "Transparent rotor training kit with connected measurement leads.",
-      "caption": "Transparent rotor training kit with measurement leads",
+      "caption": "RK4 Rotor Kit – Top View",
       "placements": [
         "Gallery",
         "Training pillar",
@@ -73,7 +73,7 @@
       "src": "assets/media/images/photo-03-1400w.webp",
       "srcset": "assets/media/images/photo-03-800w.webp 800w, assets/media/images/photo-03-1400w.webp 1400w",
       "alt": "Rotor training rig with sensors and wiring, viewed from above.",
-      "caption": "Rotor training rig viewed from above",
+      "caption": "RK4 Rotor Kit – Full View (Front)",
       "placements": [
         "Gallery",
         "Course card and detail: advanced-vibration-analysis-training"
@@ -85,7 +85,7 @@
       "src": "assets/media/images/photo-04-1400w.webp",
       "srcset": "assets/media/images/photo-04-800w.webp 800w, assets/media/images/photo-04-1400w.webp 1400w",
       "alt": "Transparent rotor training kit and attached leads, viewed from above.",
-      "caption": "Transparent rotor kit viewed from above",
+      "caption": "RK4 Rotor Kit with Rubbing Screw (View 2)",
       "placements": [
         "Gallery"
       ]
@@ -96,7 +96,7 @@
       "src": "assets/media/images/photo-05-1400w.webp",
       "srcset": "assets/media/images/photo-05-800w.webp 800w, assets/media/images/photo-05-1400w.webp 1400w",
       "alt": "Vibration measurement control panel with connected instrumentation.",
-      "caption": "Data-acquisition control panel",
+      "caption": "ADRE 208 DAQ, Speed Controller and Proximitor Assembly",
       "placements": [
         "Gallery"
       ]
@@ -107,7 +107,7 @@
       "src": "assets/media/images/photo-06-1400w.webp",
       "srcset": "assets/media/images/photo-06-800w.webp 800w, assets/media/images/photo-06-1400w.webp 1400w",
       "alt": "Close view of a rotor assembly with sensors and wiring.",
-      "caption": "Rotor assembly with sensors",
+      "caption": "RK4 Rotor Kit with Rubbing Screw View 1",
       "placements": [
         "Gallery",
         "Course card and detail: introductory-machinery-vibration"
@@ -119,7 +119,7 @@
       "src": "assets/media/images/photo-07-1400w.webp",
       "srcset": "assets/media/images/photo-07-800w.webp 800w, assets/media/images/photo-07-1400w.webp 1400w",
       "alt": "Rotor support and measurement leads on a training rig.",
-      "caption": "Close-up of rotor support and measurement leads",
+      "caption": "RK4 Rotor Kit with Rubbing Screw (View 3)",
       "placements": [
         "Gallery"
       ]
@@ -130,7 +130,7 @@
       "src": "assets/media/images/photo-08-1400w.webp",
       "srcset": "assets/media/images/photo-08-800w.webp 800w, assets/media/images/photo-08-1400w.webp 1400w",
       "alt": "Close view of a rotor training assembly and its leads.",
-      "caption": "Rotor assembly and measurement leads",
+      "caption": "RK4 Rotor Kit – Side View with Rubbing Screw",
       "placements": [
         "Gallery"
       ]
@@ -141,7 +141,8 @@
       "src": "assets/media/images/photo-09-1400w.webp",
       "srcset": "assets/media/images/photo-09-800w.webp 800w, assets/media/images/photo-09-1400w.webp 1400w",
       "alt": "Long rotor training kit arranged on a workbench.",
-      "caption": "RK4 Rotor Kit with ADRE 208 in action",
+      "caption": "RK4 Rotor Kit – Full View (Side)",
+      "aboutCaption": "RK4 Rotor Kit with ADRE 208 in action",
       "placements": [
         "Gallery",
         "About section"
@@ -153,7 +154,7 @@
       "src": "assets/media/images/photo-10-1400w.webp",
       "srcset": "assets/media/images/photo-10-800w.webp 800w, assets/media/images/photo-10-1400w.webp 1400w",
       "alt": "Rotor training rig with measurement equipment on a workbench.",
-      "caption": "Rotor training rig with measurement equipment",
+      "caption": "RK4 Rotor Kit – Side View",
       "placements": [
         "Gallery"
       ]
@@ -164,7 +165,7 @@
       "src": "assets/media/images/photo-11-1400w.webp",
       "srcset": "assets/media/images/photo-11-800w.webp 800w, assets/media/images/photo-11-1400w.webp 1400w",
       "alt": "Rotor kit fitted with sensors and connected leads.",
-      "caption": "Rotor kit and connected sensors",
+      "caption": "RK4 Rotor Kit – Full View (Closer 1)",
       "placements": [
         "Gallery"
       ]
@@ -175,7 +176,7 @@
       "src": "assets/media/images/photo-12-1400w.webp",
       "srcset": "assets/media/images/photo-12-800w.webp 800w, assets/media/images/photo-12-1400w.webp 1400w",
       "alt": "Rotor training kit with connected measurement instruments.",
-      "caption": "Rotor training kit with measurement instruments",
+      "caption": "RK4 Rotor Kit – Full View (Closer 2)",
       "placements": [
         "Gallery"
       ]
@@ -186,7 +187,7 @@
       "src": "assets/media/images/photo-13-1400w.webp",
       "srcset": "assets/media/images/photo-13-800w.webp 800w, assets/media/images/photo-13-1400w.webp 1400w",
       "alt": "Portable vibration analyzer beside an open protective case.",
-      "caption": "Portable vibration analyzer and protective case",
+      "caption": "DAQ – TWave T8 & ADRE 208",
       "placements": [
         "Gallery"
       ]
@@ -197,7 +198,7 @@
       "src": "assets/media/images/photo-14-1400w.webp",
       "srcset": "assets/media/images/photo-14-800w.webp 800w, assets/media/images/photo-14-1400w.webp 1400w",
       "alt": "Rotor training equipment and instrumentation on a laboratory bench.",
-      "caption": "Rotor training setup on a laboratory bench",
+      "caption": "DAQ & RK4 Rotor Kit",
       "placements": [
         "Gallery"
       ]
@@ -208,7 +209,7 @@
       "src": "assets/media/images/photo-15-1400w.webp",
       "srcset": "assets/media/images/photo-15-800w.webp 800w, assets/media/images/photo-15-1400w.webp 1400w",
       "alt": "Open protective case containing data-acquisition equipment.",
-      "caption": "Open case containing data-acquisition equipment",
+      "caption": "DAQ – TWave & Speed Controller and Proximitor Assembly",
       "placements": [
         "Gallery",
         "Course card and detail: two-day-online-course"
@@ -220,7 +221,7 @@
       "src": "assets/media/images/photo-16-1400w.webp",
       "srcset": "assets/media/images/photo-16-800w.webp 800w, assets/media/images/photo-16-1400w.webp 1400w",
       "alt": "Rotor training rig and vibration analyzer on a workbench.",
-      "caption": "Rotor training rig with an analyzer",
+      "caption": "RK4 Rotor Kit – Full View (Side)",
       "placements": [
         "Gallery"
       ]
@@ -231,7 +232,7 @@
       "src": "assets/media/images/photo-17-1400w.webp",
       "srcset": "assets/media/images/photo-17-800w.webp 800w, assets/media/images/photo-17-1400w.webp 1400w",
       "alt": "Long rotor training kit with a handheld measurement instrument.",
-      "caption": "Long rotor kit with a handheld instrument",
+      "caption": "RK4 Rotor Kit – Full View (Side)",
       "placements": [
         "Gallery"
       ]
@@ -242,7 +243,7 @@
       "src": "assets/media/images/photo-18-1400w.webp",
       "srcset": "assets/media/images/photo-18-800w.webp 800w, assets/media/images/photo-18-1400w.webp 1400w",
       "alt": "Rotor shaft and support on a training rig.",
-      "caption": "Close-up of a rotor shaft and support",
+      "caption": "Oil whirl Bearing Assembly with Preload Bracket",
       "placements": [
         "Gallery"
       ]
@@ -253,7 +254,7 @@
       "src": "assets/media/images/photo-19-1400w.webp",
       "srcset": "assets/media/images/photo-19-800w.webp 800w, assets/media/images/photo-19-1400w.webp 1400w",
       "alt": "Electric motor and balancing rotor beside a handheld vibration meter.",
-      "caption": "Motor and balancing rotor with a handheld meter",
+      "caption": "Tiera Rotor Kit & Tachometer",
       "placements": [
         "Gallery",
         "Consultancy pillar",
@@ -267,7 +268,7 @@
       "src": "assets/media/images/photo-20-1400w.webp",
       "srcset": "assets/media/images/photo-20-800w.webp 800w, assets/media/images/photo-20-1400w.webp 1400w",
       "alt": "Close-up of a gold balancing disc mounted on a rotor shaft.",
-      "caption": "Gold balancing disc and rotor shaft",
+      "caption": "Tiera Rotor Kit & Accelerometer",
       "placements": [
         "Gallery"
       ]
@@ -278,7 +279,7 @@
       "src": "assets/media/images/photo-21-1400w.webp",
       "srcset": "assets/media/images/photo-21-800w.webp 800w, assets/media/images/photo-21-1400w.webp 1400w",
       "alt": "Electric motor and rotor setup with a handheld vibration meter.",
-      "caption": "Motor, rotor and vibration meter",
+      "caption": "Tiera Rotor Kit & Accelerometer & Tachometer",
       "placements": [
         "Gallery",
         "Course card and detail: vibration-analysis-and-rotor-balancing"
@@ -290,7 +291,7 @@
       "src": "assets/media/images/photo-22-1400w.webp",
       "srcset": "assets/media/images/photo-22-800w.webp 800w, assets/media/images/photo-22-1400w.webp 1400w",
       "alt": "Rotor balancing rig with gold discs mounted on a horizontal shaft.",
-      "caption": "Rotor balancing rig with gold discs",
+      "caption": "Tiera Rotor Kit – Front View with 2 Discs",
       "placements": [
         "Gallery",
         "Course card and detail: intermediate-machinery-vibration-analysis-level-iii"
@@ -302,7 +303,7 @@
       "src": "assets/media/images/photo-23-1400w.webp",
       "srcset": "assets/media/images/photo-23-800w.webp 800w, assets/media/images/photo-23-1400w.webp 1400w",
       "alt": "Rotor balancing rig and motor arranged on a workbench.",
-      "caption": "Full rotor balancing setup on a workbench",
+      "caption": "Tiera Rotor Kit & Accelerometer",
       "placements": [
         "Gallery",
         "Course card and detail: dynamic-balancing-of-rotors",
@@ -316,7 +317,7 @@
       "src": "assets/media/images/photo-24-1400w.webp",
       "srcset": "assets/media/images/photo-24-800w.webp 800w, assets/media/images/photo-24-1400w.webp 1400w",
       "alt": "Handheld vibration meter and training equipment on a workbench.",
-      "caption": "Vibration meter and training equipment on a bench",
+      "caption": "Valenian PT400 Mini Bearing and Gearbox Fault simulator and Tachometer – Closer View",
       "placements": [
         "Gallery"
       ]
@@ -327,7 +328,7 @@
       "src": "assets/media/images/photo-25-1400w.webp",
       "srcset": "assets/media/images/photo-25-800w.webp 800w, assets/media/images/photo-25-1400w.webp 1400w",
       "alt": "Handheld measurement instrument beside a rotor training kit.",
-      "caption": "Measurement instrument beside a rotor kit",
+      "caption": "Valenian PT400 Mini Bearing and Gearbox Fault simulator and Tachometer – Side",
       "placements": [
         "Gallery"
       ]
@@ -338,7 +339,7 @@
       "src": "assets/media/images/photo-26-1400w.webp",
       "srcset": "assets/media/images/photo-26-800w.webp 800w, assets/media/images/photo-26-1400w.webp 1400w",
       "alt": "Vibration analyzer beside a rotor rig with measurement leads.",
-      "caption": "Vibration analyzer and instrumented rotor rig",
+      "caption": "Valenian PT400 Mini Bearing and Gearbox Fault simulator and Tachometer – Side View 2",
       "placements": [
         "Gallery"
       ]
@@ -349,7 +350,7 @@
       "src": "assets/media/images/photo-27-1400w.webp",
       "srcset": "assets/media/images/photo-27-800w.webp 800w, assets/media/images/photo-27-1400w.webp 1400w",
       "alt": "Digital RPM readout on a handheld measurement device.",
-      "caption": "Digital RPM readout on a meter",
+      "caption": "RK4 Rotor Kit Speed Controller",
       "placements": [
         "Gallery"
       ]
@@ -360,7 +361,7 @@
       "src": "assets/media/images/photo-28-1400w.webp",
       "srcset": "assets/media/images/photo-28-800w.webp 800w, assets/media/images/photo-28-1400w.webp 1400w",
       "alt": "Acrylic rotor training kit and handheld vibration analyzer.",
-      "caption": "Acrylic rotor kit with a handheld analyzer",
+      "caption": "Valenian PT400 Mini Bearing and Gearbox Fault simulator",
       "placements": [
         "Gallery"
       ]
@@ -371,7 +372,7 @@
       "src": "assets/media/images/photo-29-1400w.webp",
       "srcset": "assets/media/images/photo-29-800w.webp 800w, assets/media/images/photo-29-1400w.webp 1400w",
       "alt": "Acrylic rotor training assembly fitted with sensors.",
-      "caption": "Acrylic rotor assembly with sensors",
+      "caption": "RK4 Rotor Kit – With X,Y Probes – DE Side",
       "placements": [
         "Gallery"
       ]
@@ -382,7 +383,7 @@
       "src": "assets/media/images/photo-30-1400w.webp",
       "srcset": "assets/media/images/photo-30-800w.webp 800w, assets/media/images/photo-30-1400w.webp 1400w",
       "alt": "Motor-driven rotor balancing rig on a training bench.",
-      "caption": "Motor-driven rotor rig on a training bench",
+      "caption": "RK4 Rotor Kit – With X,Y Probes – NDE Side",
       "placements": [
         "Gallery"
       ]
@@ -393,7 +394,7 @@
       "src": "assets/media/images/photo-31-1400w.webp",
       "srcset": "assets/media/images/photo-31-800w.webp 800w, assets/media/images/photo-31-1400w.webp 1400w",
       "alt": "Close view of a rotor bearing and shaft assembly.",
-      "caption": "Close view of a rotor bearing and shaft",
+      "caption": "RK4 Rotor Kit – Top View",
       "placements": [
         "Gallery"
       ]
@@ -404,7 +405,7 @@
       "src": "assets/media/images/photo-32-1400w.webp",
       "srcset": "assets/media/images/photo-32-800w.webp 800w, assets/media/images/photo-32-1400w.webp 1400w",
       "alt": "Data-acquisition unit connected to multiple measurement leads.",
-      "caption": "Data-acquisition unit with connected leads",
+      "caption": "RK4 Rotor Kit with Rubbing Screw View 1",
       "placements": [
         "Gallery",
         "AMC pillar",
@@ -417,7 +418,7 @@
       "src": "assets/media/images/photo-33-1400w.webp",
       "srcset": "assets/media/images/photo-33-800w.webp 800w, assets/media/images/photo-33-1400w.webp 1400w",
       "alt": "Transparent rotor training assembly and attached wiring.",
-      "caption": "Transparent rotor training assembly",
+      "caption": "ADRE 208 DAQ, Speed Controller and Proximitor Assembly",
       "placements": [
         "Gallery"
       ]
@@ -428,7 +429,7 @@
       "src": "assets/media/images/photo-34-1400w.webp",
       "srcset": "assets/media/images/photo-34-800w.webp 800w, assets/media/images/photo-34-1400w.webp 1400w",
       "alt": "Rotor training kit with connected measurement instrumentation.",
-      "caption": "Rotor training kit with connected instrumentation",
+      "caption": "RK4 Rotor Kit with Rubbing Screw View 1",
       "placements": [
         "Gallery"
       ]
@@ -439,7 +440,7 @@
       "src": "assets/media/images/photo-35-1400w.webp",
       "srcset": "assets/media/images/photo-35-800w.webp 800w, assets/media/images/photo-35-1400w.webp 1400w",
       "alt": "Close view of a rotor shaft and support on a training rig.",
-      "caption": "Rotor shaft and support on a training rig",
+      "caption": "RK4 Rotor Kit with Rubbing Screw View 1",
       "placements": [
         "Gallery"
       ]
