@@ -61,7 +61,7 @@
       "src": "assets/media/images/photo-02-1400w.webp",
       "srcset": "assets/media/images/photo-02-800w.webp 800w, assets/media/images/photo-02-1400w.webp 1400w",
       "alt": "Transparent rotor training kit with connected measurement leads.",
-      "caption": "RK4 Rotor Kit – Top View",
+      "caption": "RK4 Rotor Kit – Side View",
       "placements": [
         "Gallery",
         "Training pillar",
@@ -74,7 +74,7 @@
       "src": "assets/media/images/photo-03-1400w.webp",
       "srcset": "assets/media/images/photo-03-800w.webp 800w, assets/media/images/photo-03-1400w.webp 1400w",
       "alt": "Rotor training rig with sensors and wiring, viewed from above.",
-      "caption": "RK4 Rotor Kit – Full View (Front)",
+      "caption": "RK4 Rotor Kit – Full View (Top)",
       "placements": [
         "Gallery",
         "Course card and detail: advanced-vibration-analysis-training"
