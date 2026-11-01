@@ -130,7 +130,7 @@ document.addEventListener("vibrosine:ready", () => {
           lightboxImage.removeAttribute("srcset");
         }
         lightboxImage.alt = trigger.dataset.lightboxAlt || "";
-        lightboxCaption.textContent = trigger.dataset.lightboxAlt || "";
+        lightboxCaption.textContent = trigger.dataset.lightboxCaption || "";
         lightbox.showModal();
         closeButton?.focus();
       });

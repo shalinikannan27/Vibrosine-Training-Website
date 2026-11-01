@@ -47,7 +47,7 @@
     if (!item) return "";
     const image = imageMarkup(item);
     const display = lightbox
-      ? `<button class="gallery-item" type="button" data-lightbox-src="${escapeHtml(join(item.src))}" data-lightbox-srcset="${escapeHtml(item.srcset || "")}" data-lightbox-alt="${escapeHtml(item.alt)}" aria-label="View larger image: ${escapeHtml(item.alt)}">${image}</button>`
+      ? `<button class="gallery-item" type="button" data-lightbox-src="${escapeHtml(join(item.src))}" data-lightbox-srcset="${escapeHtml(item.srcset || "")}" data-lightbox-alt="${escapeHtml(item.alt)}" data-lightbox-caption="${escapeHtml(caption || "")}" aria-label="View larger image: ${escapeHtml(item.alt)}">${image}</button>`
       : image;
     return `<figure class="${escapeHtml(className)}">${display}${caption ? `<figcaption>${escapeHtml(caption)}</figcaption>` : ""}</figure>`;
   }
